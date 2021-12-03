@@ -1,0 +1,20 @@
+.contact_container{
+    background-color: var(--nav-color);
+    color:whitesmoke;
+    padding: 1rem;
+}
+
+.contact_data_links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact_data_links a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contact_data_links a:hover{color: var(--light-color);
+    flex-direction: column;
+}

@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,900&display=swap');
+.App{font-family: 'Lato', sans-serif;}
+#root {
+  --nav-color: #444444;
+  --nav-color-hover:#000000;
+  --nav-border-color:#444444;
+  --light-color:#444444;
+  --font-color:#FFFFFF;
+  --font-color-hover:#070606;
+}
+body{
+  background-color:whitesmoke;
+}
+
+.gallery{
+  display: inline-block; 
+ 
+}
+.bio{
+
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin: 40px;
+  border: 2px solid #444444;
+  height: 500px;
+  width: 500px;
+ 
+}
+.picMe{
+
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 240px;
+  height: 500px;
+    width: 500px;
+    border: 3px solid #444444;
+   
+}
+.string{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    z-index: 1;
+    font-size: 44px;
+    position: absolute;
+
+   
+}

@@ -1,0 +1,13 @@
+.beginning{
+    display: flex;
+    position: absolute;
+    color: whitesmoke;
+    z-index: 1;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 455px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
