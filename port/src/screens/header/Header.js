@@ -4,8 +4,10 @@ import './header.css';
 
 function Header(){
     return(
-        <div className="about">
+        <div className="me">
             <h1>About me.</h1>
+           
+           
             <Typed
                 strings={[
                     "",
@@ -17,12 +19,10 @@ function Header(){
                     typeSpeed={40}
                     backSpeed={50}
                     loop
-
-
-                
                 />
-                
         </div>
+       
+      
     )
 }
 

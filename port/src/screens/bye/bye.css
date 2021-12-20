@@ -1,13 +1,32 @@
-.beginning{
+
+#main h1{
+    color:whitesmoke;
+    display: inline-block;
+    z-index: 40;
+    top:23%;
+    text-align: center;
     display: flex;
-    position: absolute;
-    color: whitesmoke;
-    z-index: 1;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 455px;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    position: absolute;
+    width: 100%;
+  }
+  #main h2{
+    color:whitesmoke;
+    display: inline-block;
+    z-index: 40;
+    top:27%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+  }
+.container{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
 }
+
+
+

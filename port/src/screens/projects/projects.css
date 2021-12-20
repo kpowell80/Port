@@ -1,49 +1,36 @@
-.projects{
-    background-color: whitesmoke;
-}
 
-.about{
-    display:flex;
-    flex-direction: column;
-    /* position: absolute; */
-    margin-top: 100px;
-    justify-content: center;
-    align-items: center;
- 
-  }
-
-.projects_main_container h1,
-.projects_main_container p{
+.projects_main h1,
+.projects_main p{
     text-align: center;
-    margin-top: 3rem;
+    margin-top:3rem;
 }
 
-#projects_card_container{
-    width: 25%;
-    padding:10px;
-    border: 2px solid #444444;
+#projects_card{
+width:25%;
+padding:10px;
+border:none; 
+text-align: center;
 }
 
-/* #image{
-    object-fit: fill;
-} */
-.image{
-    width: 100%;
-    object-fit: cover !important;
+.projects_image{
+    height: 400px;
+    transition: all color 2s;
 }
 
 .projects_image:hover{
     cursor:pointer;
-    filter:brightness(50%);
-    color:pink !important;
+    /* filter:brightness(50%); */
+    background-color: violet;
+    transform: scale(1.2,1.2);
+  
 }
 
 .projects_click_info{
     position:absolute;
     top:50%;
     left:50%;
-    transform: translate(-505, -50%);
-    color:pink !important;
+    transform: translate(-50%, -50%);
+    color:black;
     display: none;
 }
 .overlay{
@@ -51,7 +38,10 @@
 }
 .projects_image:hover + .projects_click_info{
     display: block;
-    /* background-image: url("image"); */
+}
+
+.projects_card:hover{
+    background-color: violet;
 }
 
 .modal-backdrop.show{
@@ -59,18 +49,45 @@
 }
 
 #projects_modal_link{
-    padding:0 0 1rem 1rem
-}
+    padding:1 0 1rem 1rem;
+    color:black;
 
+}
 #projects_modal_link:link{
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-@media only screen and (max-width:600px){
-    #projects_card_container{
+@media only screen and (max-width:700px){
+    #projects_card{
         width: 100%;
         padding:0.5rem 2.5rem;
         border: none;
+        flex-direction: column;
+    
     }
 }
+.projects{
+    text-align: center;
+}
 
+.shadow{
+    box-shadow: 0px 35px 77px -1px rgba(0,0,0,0.44);
+
+}
+
+/* .across{
+    padding:0px;
+}
+.Container{
+    display: flex;
+    flex-direction: row;
+}
+.row{
+    flex-direction: row;
+} */
+/* .row{
+    flex-direction: row;
+
+.image-fluid{
+    width: max-content;
+}  */

@@ -1,14 +1,14 @@
-import govt from '../images/projectimages/govt.png';
-import mobile from '../images/projectimages/mobile.png';
-import bwplanta from '../images/projectimages/bwplanta.png';
+import gmobile from '../images/projectimages/nsaport.png';
+import mobile from '../images/projectimages/spikeport-2.png';
+import bwplanta from '../images/projectimages/plantport-3.png';
 import HH from '../images/projectimages/hhport.png';
 
 const projects =[
     {
-        image: govt,
+        image: gmobile,
         link:"https://www.figma.com/file/F8gmiyKuQhu7j2O1kwrmV1/Homepage?node-id=22%3A110",
         title:"govt_homepage",
-        summary:"only homepage",
+        summary:"mobile and homepage",
         tech:"figma"
     },
     {

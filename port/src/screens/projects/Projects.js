@@ -9,6 +9,7 @@ import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
+
 function Projects(){
     const [modalShow, setModalShow] = useState(false);
     const [tempData,setTempData]= useState({})
@@ -20,7 +21,7 @@ function createModal(data){
     <Modal
         show={modalShow}
         onHide={()=> setModalShow(false)}
-        size="lg"
+        size="sm"
         arial-labelledby="contained-modal-title-vcenter"
         centered>
 
@@ -31,9 +32,9 @@ function createModal(data){
                 </Modal.Header>
                 <Modal.Body>
                     <p>{data.summary}</p>
-                    <image className="img-fluid" src={data.image} style={{maxHeight:"100%"}} id="image"/>
+                    <Image src={data.image} style={{width:"200px"}}/>
                 </Modal.Body>
-                <a id="project_modal_link" href={data.link} target="_blank" rel="noreferrer">Go to site</a>
+                <a id="projects_modal_link" href={data.link} target="_blank" rel="noreferrer">Go to site</a>
                 <Modal.Footer>
                     <div>Technologies used:</div>
                     <p style={{fontSize:'1 rem', marginRight:'auto'}}>{data.tech}</p>
@@ -43,7 +44,7 @@ function createModal(data){
 }
     const mapped = projects.map((e,idx)=>{
         return(
-            <Card key={idx}id="projects_card_container">
+            <Card key={idx}id="projects_card" className="shadow">
                 <Image className="projects_image"
                 onClick={()=>{ 
                 setTempData({
@@ -58,15 +59,15 @@ function createModal(data){
             src={e.image}/>
             <div className="projects_click_info">&#x1F50E;&#xFE0E;</div> 
             {createModal(tempData)} 
-                   
             </Card>
-        );
+           
+        ); 
     })
+   
     return (
-        <div className="projects_main_container" id="projects">
-            <div className="about">
+        <div className="projects_main" id="projects">
            <h1 >Projects.</h1> 
-           <Typed
+          <p> <Typed
                 strings={[
                     "",
                     "Government Agency Web Redesign",
@@ -79,16 +80,17 @@ function createModal(data){
                     backSpeed={50}
                     loop 
                 />
-            </div>
-           <p>My Github Page. <br/>
-           <a href="" target="blank" rel="noreferrer">github.com/kpowell80</a>
+          </p>
+           <p>My Github Page. <br></br>
+              <a href="https://github.com/kpowell80" target="blank" rel="noreferrer"> github.com/kpowell80</a>
            </p>
-           <Container fluid ="lg" style={{padding:'2rem 0'}}>
-               <Row>
+           <Container fluid ="lg" style={{padding:'3rem 0'}}>
+               <Row  style={{padding:'0px 0px 0px 0px'}} >
                     {mapped}
                </Row>
            </Container>
-        </div>
+           </div>
+       
     )
 }
 
