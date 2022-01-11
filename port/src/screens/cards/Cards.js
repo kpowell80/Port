@@ -55,7 +55,7 @@ function Cards() {
                   <li>Usability Testing</li>
                   <li>Prototyping/Ideation</li>
                </ul>
-               <a href="#" class="btn btn-dark" alt="case" >Full Case Study</a>
+               <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" class="btn btn-dark" alt="case">Full Case Study</a>
                 </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ function Cards() {
                   <li>User Matrix</li>
                   <li>Creating POV</li>
                </ul>
-            <a href="#" id="case"class="btn btn-dark" size="lg">Full Case Study</a>
+            <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" id="case"class="btn btn-dark" size="lg">Full Case Study</a>
             </div>
           </div>
             </div>
@@ -100,7 +100,7 @@ function Cards() {
                   <li>Affinity Diagram </li>
                   <li>User Flow</li>
                </ul>
-            <a href="#" class="btn btn-dark">Go to Figma</a>
+            <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" class="btn btn-dark">Go to Figma</a>
             </div>
             </div>
           </div>
@@ -123,7 +123,7 @@ function Cards() {
                   <li>Empathy Mapping</li>
                   <li>Usability Testing</li>
                </ul>
-            <a href="#" class="btn btn-dark">Go to Figma</a>
+            <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" class="btn btn-dark">Go to Figma</a>
             </div>
             </div>
           </div>
