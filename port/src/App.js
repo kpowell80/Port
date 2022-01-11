@@ -4,10 +4,9 @@ import ParticleAnimation from 'react-particle-animation'
 import ParticlesBg from 'particles-bg';
 import Header from './screens/header/Header';
 import Me from './screens/me/Me';
-import Projects from './screens/projects/Projects';
+// import Projects from './screens/projects/Projects';
 import Resume from './screens/resume/Resume';
-import Philosophy from './screens/philosopy/philosophy';
-import Mission from './screens/mission/Mission';
+import Cards from './screens/cards/Cards';
 import Contact from './screens/contact/Contact';
 import Bye from './screens/bye/Bye';
 
@@ -22,17 +21,17 @@ function App() {
            <ParticlesBg 
            type="cobweb"
            bg={true}
-           opacity=".3"
+          //  opacity=".2"
            zIndex="-1"
            position="fixed"
            size= "100%" 
            />
         <Header></Header>
          <Me/>
-         <Projects/>
+         {/* <Projects/> */}
+         <Cards/>
          <Resume/>
-         <Philosophy/>  
-         <Mission/> 
+         {/* <Philosophy/>   */}
          </div>
          <section>
     <ParticleAnimation

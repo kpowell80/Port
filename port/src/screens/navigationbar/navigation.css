@@ -15,27 +15,30 @@
 }
 
 .links a:hover{
-    background-color: gainsboro;
+    background-color:#A9A9A9!important;
     color:#070606;
 }
 .logo{
     /* background-color:var(--nav-color) ; */
-    height:50px;
-    width: 50px;
+    height:60px;
+    width: 60px;
     transition: all;
     background-image: url("../../images/unsolved.png") ;
 }
 .logo:hover{
-    background-image: url("../../images/solutions4.png");
+    background-image: url("../../images/blck-wsolve5.png");
     height:50px;
     width: 50px;
     transform:scale(1.5,1.5);
 }
-.name{
+.small{
     padding-left: 15px;
 }
 .img{
     background-color:var(--nav-color) ;
     height:50px;
     width: 50px;
+}
+.links{
+    margin: 0px 15px;
 }

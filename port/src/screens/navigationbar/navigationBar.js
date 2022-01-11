@@ -3,8 +3,8 @@ import './navigation.css'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import {navigationLinks} from '../../helpers/navigationLinks'
-import unsolved from"../../images/unsolved.png"
-import solutions from"../../images/solutions4.png"
+import unsolved from"../../images/b-wcubeun.png"
+import solutions from"../../images/blck-wsolve5.png"
 // import Image from 'react-bootstrap/Image';
 import HoverImage from "react-hover-image";
 
@@ -24,12 +24,12 @@ function NavigationBar(){
     return(
         <div id="home">
            <Navbar className="navi_container" 
-           style={{zIndex:2, position:'fixed', top:'0',width:'100%'}} 
+           style={{zIndex:20000000, position:'fixed', top:'0',width:'100%'}} 
            collapseOnSelect 
            expand="md">
                <Navbar.Brand style={{marginLeft:'2rem'}} href="#home">
                <HoverImage src={unsolved} className="logo" style={{display: 'inline-block'}} hoverSrc={solutions} onClick= {Solve}></HoverImage>
-                <span className="name" style={{display:'inline-block'}}>Katelin Reilly</span>
+                <span className="small" style={{display:'inline-block'}}>Katelin Reilly</span>
                </Navbar.Brand>
                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                <Navbar.Collapse style={{justifyContent: 'flex-end', marginRight:'2rem'}}>

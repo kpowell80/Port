@@ -36,7 +36,11 @@
     justify-content: center;
     text-align: center;
     color:black;
+    
   
+}
+#talk{
+    margin-bottom: 10%;
 }
 .skills{
     text-decoration: black;
@@ -46,9 +50,7 @@
     color:black;
 
 }
-#shadow{
-    box-shadow: 0px 35px 77px -1px rgba(0,0,0,0.44);
-}
+
 
 
 

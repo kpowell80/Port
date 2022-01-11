@@ -84,7 +84,7 @@ function createModal(data){
            <p>My Github Page. <br></br>
               <a href="https://github.com/kpowell80" target="blank" rel="noreferrer"> github.com/kpowell80</a>
            </p>
-           <Container fluid ="lg" style={{padding:'3rem 0'}}>
+           <Container fluid ="lg" style={{padding:'3rem 0'}} className="pro">
                <Row  style={{padding:'0px 0px 0px 0px'}} >
                     {mapped}
                </Row>

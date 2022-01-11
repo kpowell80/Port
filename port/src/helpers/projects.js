@@ -1,4 +1,4 @@
-import gmobile from '../images/projectimages/nsaport.png';
+import gmobile from '../images/projectimages/blckwhns.png';
 import mobile from '../images/projectimages/spikeport-2.png';
 import bwplanta from '../images/projectimages/plantport-3.png';
 import HH from '../images/projectimages/hhport.png';
@@ -32,6 +32,7 @@ const projects =[
         summary:"mobile",
         tech:"figma"
     },
-]
+
+ ]
 
 export default projects

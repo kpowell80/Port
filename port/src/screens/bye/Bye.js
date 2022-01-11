@@ -16,7 +16,7 @@ function Bye(){
  color={{r:245, g:245,b:245, a:245}}
  />
     <div id="main">
-       <p><h1>Katelin Reilly</h1> <br></br><h2>UX/UI Designer</h2> </p> 
+       <p><h1 className="name">Solving design problems and creating connections for the user.</h1></p>
         
     </div>
  </div>

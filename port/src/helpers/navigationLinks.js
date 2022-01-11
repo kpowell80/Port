@@ -12,14 +12,7 @@ export const navigationLinks = [
     },  {
         name:'RESUME',
         ref:'#resume'
-    },  {
-        name: 'PHILOSOPHY',
-        ref:'#philosophy'
-    },  {
-        name:'MISSION',
-        ref:'#mission'
-    },
-    
+    }, 
     {
         name:'CONTACT',
         ref:'#contact'

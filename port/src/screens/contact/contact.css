@@ -15,6 +15,7 @@
     text-transform: uppercase;
 }
 
-.contact_data_links a:hover{color: var(--light-color);
+.contact_data_links a:hover{
+    color: var(--light-color);
     flex-direction: column;
 }
