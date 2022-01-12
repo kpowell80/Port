@@ -5,7 +5,7 @@ import './header.css';
 function Header(){
     return(
         <div className="me">
-            <h1>About me.</h1>
+            <h1 className="period">About me.</h1>
             <h3>UX/UI Designer</h3>
            
             <Typed
