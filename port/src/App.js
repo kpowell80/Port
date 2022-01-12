@@ -31,7 +31,6 @@ function App() {
          {/* <Projects/> */}
          <Cards/>
          <Resume/>
-         {/* <Philosophy/>   */}
          </div>
          <section>
     <ParticleAnimation
