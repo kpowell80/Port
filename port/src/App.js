@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import Navigation from './screens/navigationbar/navigationBar';
 import ParticleAnimation from 'react-particle-animation' 

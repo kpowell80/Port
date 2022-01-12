@@ -1,7 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
 import './resume.css';
-// import { CustomPlaceholder } from 'react-placeholder-image';
 import Zoom from 'react-reveal/Zoom';
 import {Container,Row, Col} from 'react-grid-system';
 
@@ -25,51 +24,11 @@ function Resume() {
                     typeSpeed={40}
                     backSpeed={50}
                     loop />
-                {/* <CustomPlaceholder className="custom" id="shadow"
-
-                    width={500}
-                    height={500}
-                    backgroundColor="#f5f5f5"
-                    // border="3px solid #444444"
-                    textColor="#444444"
-                    text="
-                    Katelin E. Reilly 910 Cameron Street
-                    Alexandria VA 22314 +1-323-810-4787 reillykatelin0@gmail.com
-                    SUMMARY
-                    Applying core software development knowledge (e.g., JavaScript, C#, React.js, HTML/CSS) and superior customer engagement experience to develop applications that provide superior user experiences.
-                    EXPERIENCE
-                    VARIETY THE CHILDREN’S CHARITY August 2021-Present NATIONAL CAPITAL REGION
-                    Variety is an international non-profit that has served children with disabilities since 1927. It provides a range of vital life-changing equipment and services for mobility, independence and social inclusion to individual children and children’s organizations.
-                    Webmaster (August 2021 - Present)
-                    Responsible for the design and maintenance of the official web presence for Variety’s National Capital Region branch. Currently leading a ground up redesign of the site with a focus on increasing online donations.
-                    · Held multiple interviews with key stakeholders from across Variety and its donors ·
-                    INNOVATIVE DINING GROUP (IDG) June 2004-March 2015 Restaurant holding group focused on high-end dining experiences, primarily in the greater Los Angeles, CA area. Generates >$75M in annual revenue across multiple brands, with BOA Steakhouse its flagship generating >$15M in annual revenue from its West Hollywood, CA location.
-                    Maitre’d (June 2004 – March 2015)
-                    Responsible for optimizing customer flow to achieve daily revenue targets. Routinely balanced satisfying very demanding clientele with meeting business objectives. Typically achieved an industry-leading >98% floor allocation on any given evening.
-                    · [Bullet] · [Bullet]
-                    NEIMAN MARCUS – STUDIO SERVICES May 2004 – July 2005 American chain of luxury department stores that generates >$5B in annual revenue. Studio services provides boutique styling consulting to very high net worth individuals and TV/Movie production companies.
-                    Stylist (May 2004 – July 2005)
-                    Provided styling expertise to A-List television and movie stars
-                     
-                     EDUCATION
-                    THE GEORGE WASHINGTON UNIVERSITY, Washington, DC, USA Certificate in User Experience / User Interface Design
-                    CODING DOJO, Tysons Corner, VA, USA Certificate in Software Development
-                    ADDITIONAL INFORMATION
-                    Down Dog Yoga Studio, Herndon, Virginia, USA
-                    200 Hour Yoga Teaching Certificate
-                    Yoga Works Studio, Richmond, VA, USA 200 Hour Yoga Teaching Certificate
-                    January 2022 April 2019
-                    2018 2017"
-
-
-                /> */}
+               
             </Zoom>
             
                 <Container className="resumeShape">
-                   
-                    {/* <div className="info"> Katelin E. Reilly <br></br> 910 Cameron Street<br></br> 
-                    Alexandria VA 22314 +1-323-810-4787 <br></br>  reillykatelin0@gmail.com
-                    </div> */}
+                 
                     <Row>
                     <Col lg={6} id="summary" className="gridtextbox1" > - SUMMARY</Col>
                     <Col lg={6} className="gridtextbox2">
