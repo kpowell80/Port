@@ -19,18 +19,19 @@
     color:#070606;
 }
 .logo{
-    /* background-color:var(--nav-color) ; */
+
     height:60px;
     width: 60px;
     transition: all;
-    background-image: url("../../images/unsolved.png") ;
 }
 .logo:hover{
-    background-image: url("../../images/blck-wsolve5.png");
-    /* height:50px;
-    width: 50px; */
-    /* transform:scale(1.5,1.5); */
-    transform: rotate3d(360);
+    /* background-image: url("../../images/blck-wsolve5.png"); */
+    height:50px;
+    width: 50px;
+    transform:scale(1.5,1.5);
+    margin-right: 10px;
+
+   
 }
 .small{
     padding-left: 15px;
@@ -43,3 +44,9 @@
 .links{
     margin: 0px 15px;
 }
+.nav_brand{
+   color:whitesmoke; 
+
+}.nav_brand:hover{
+   color:#A9A9A9!important;
+ }

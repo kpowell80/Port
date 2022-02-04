@@ -1,0 +1,243 @@
+/* @import "~video-react/styles/scss/video-react"; */
+
+.hero_image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/projectimages/plantss.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.case1{
+    display:flex;
+    flex-direction: column;
+    margin-top: 5%;
+    text-align: center;
+
+}
+.bigger{
+    padding:0px;
+    margin: 0px;
+    width: 100% !important;
+}
+.hero_text{
+    color:white;
+    text-align: center;
+    padding:2%;
+}
+.push{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: whitesmoke;
+    text-align: left;
+}
+.push2{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: white;
+    text-align: center;
+    
+}
+.theProject1{
+    margin-left: 25%;
+    margin-right: 25%;  
+}
+.push2_text{
+    padding:2%; 
+    text-align: left;
+}
+.valueProp h3 h4{
+    text-align: left;
+}
+/* .summary{
+    background-color:gray;
+    padding:2%;
+} */
+.questions{
+    background-color:whitesmoke;
+    padding:2%;
+}
+.researchPlan1{
+    background-color:white;
+    text-align: left;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+/* .researchPlan_text{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%; 
+} */
+.tools{
+    background-color:lightgrey;
+    text-align: center;
+    padding:2%;
+}
+.gridtextbox1{
+    padding-top: 1%;
+    align-items: center;
+    font-size:  22px;
+    
+    }
+.questions_text{
+    text-align: left;
+    padding-left: 10%;
+}
+.gridtextbox2{
+    align-items: center;
+        padding-right: 10% !important;
+        padding-top: 1%;
+    }
+.gridtextbox3{
+    align-items: center;
+        padding-left:10% !important;
+        padding-top: 1%;
+    }
+.green{
+    max-height: 300px;
+    width: auto;
+    padding:1%;
+    
+}
+.green:hover{
+   
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.greensContainer{
+   padding-left: 10%;
+}
+/* .kids:hover{
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+
+}
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 15px); } 
+    100%   { transform: translate(0, -0px); }     
+}  */
+.findings{
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: whitesmoke;
+}
+.findings_text{
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+.now1{
+    align-items: center;
+    padding:2%;
+   /* max-height: 900px; */
+    background-color: white;
+}
+/* .now_text{
+    text-align: left;
+} */
+.gridtextbox4{
+    align-items: center;
+    padding-top: 1%;
+}
+.gameContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.game{
+   height:400px;
+    width: auto;
+    padding:1%;
+
+}
+#go:hover{
+    background-color: silver;
+}
+.thoughts{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-height: 700px;
+    background-color: white;
+}
+.care{
+    height: 40%;
+    width: fit-content;
+    padding-bottom:5%;
+    margin-bottom: 3rem;
+}
+.last{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/projectimages/plantss.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    text-align: center;
+    padding-top: 4%;
+}
+/* .player{
+align-content: left;
+margin-left: 0%;
+width: 300px;
+} */
+
+.final{
+    align-content: right;
+}
+.player{
+    align-content: left;
+}
+.player video{ 
+    height:50%;
+    position: relative;
+    left:0;
+    top:0;
+    transform: none;
+    margin-top: 5%;
+    margin-left: 0;
+    margin-right: 4%;
+    border: 5px solid #555;
+    
+} 
+.wonder{
+    background-color:whitesmoke;
+  
+}
+.keep{
+    color: white;
+}
+#projects_button{
+    margin: 2%;
+    background-color: #e7e7e7; color: black;
+    font-size: 20px;
+    border-radius: 4px;
+    padding:1%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+}
+#projects_button:hover{
+    background-color: black; color: #e7e7e7;
+    transform: translateY(-7px);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  
+}

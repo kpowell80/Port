@@ -1,50 +1,38 @@
 import React from 'react'
 import './App.css';
-import Navigation from './screens/navigationbar/navigationBar';
-import ParticleAnimation from 'react-particle-animation' 
-import ParticlesBg from 'particles-bg';
-import Header from './screens/header/Header';
-import Me from './screens/me/Me';
-// import Projects from './screens/projects/Projects';
-import Resume from './screens/resume/Resume';
+// import Navigation from './screens/navigationbar/navigationBar';
+import Footer from './screens/contact/Contact'
 import Cards from './screens/cards/Cards';
-import Contact from './screens/contact/Contact';
-import Bye from './screens/bye/Bye';
+import {
+  BrowserRouter as Router,
+  Route,Routes
+} from "react-router-dom";
+import ScrollToTop from './ScrollToTop';
+import Home from './screens/Home';
+import Case1 from "./screens/casestudies/Case1";
+import Govt from "./screens/casestudies/Govt";
+import Hitch from "./screens/casestudies/Hitch";
+import Variety from "./screens/casestudies/Variety";
 
 
 function App() {
   return (
+   
  
     <div className="App">
-        <div><Navigation/></div> 
-         <section><Bye/></section>
-         <div className="body">
-           <ParticlesBg 
-           type="cobweb"
-           bg={true}
-          //  opacity=".2"
-           zIndex="-1"
-           position="fixed"
-           size= "100%" 
-           />
-        <Header></Header>
-         <Me/>
-         {/* <Projects/> */}
-         <Cards/>
-         <Resume/>
-         </div>
-         <section>
-    <ParticleAnimation
-    background={{ r: 21, g: 22, b: 23, a: 1 }}
-    style ={{height:'45vh'}}
-    particleSpeed={.2}
-    particleRadius={1.5}
-    color={{r:245, g:245,b:245, a:245}}
-    />
- 
-  </section>
-  
-   <Contact/>
+      <Router>
+        {/* <div><Navigation/></div>  */}
+      <ScrollToTop/>
+   <Routes>
+           <Route path="/" element={<Home/>}></Route>
+           <Route path="/Cards" element={<Cards/>}></Route>
+          <Route path="/Case1" element={<Case1/>}></Route>
+          <Route path="/Govt" element={<Govt/>}></Route>
+          <Route path="/Hitch" element={<Hitch/>}></Route>
+          <Route path="/Variety" element={<Variety/>}></Route>
+          </Routes>
+  </Router>
+  <Footer></Footer>
    </div>
   
   );

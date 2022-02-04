@@ -3,113 +3,91 @@
 .work{
   display: flex;
 }
-/* .flipContainer {
-  text-align: center;
-} */
-.row{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  
-}
+
 .projects{
   text-align: center;
 }
 .hi{
   text-align: center;
 }
-.flip{
-  margin-top: 5%;
+
+.img_g{
+
+  object-fit: cover;
+  height: 300px ;
+  margin-top: -20%;
+  width: 100%;
+  border-radius: 20px;
+
+}
+.img_g1{
+
+  object-fit: cover;
+  height: 300px ;
+  margin-top: -20% ;
+  width: 100%;
+  border-radius: 20px ;
+
+}
+.img_g1:hover{
+  object-fit: cover;
+  height: 300px ;
+  margin-top: -20%;
+  width: 100%;
+  border-radius: 20px!important;;
+}
+
+.one{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: center;
-  justify-content: space-evenly;
-
+  background-color: #e5e5e5!important;
+  width: 20rem !important;
+  height: fit-content;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 10px !important;
+  margin-top: 10rem;
+  cursor: 'pointer'
 }
-.flip-card{
-  background-color:transparent ;
-  width: 500px;
+/* .card2{
   height: 500px;
-  perspective: 1000px;
-}
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}.flip-card-front {
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  /* background-color: dodgerblue; */
-  color: black;
-  transform: rotateY(180deg);
-  text-align: center !important;
-  
-}
-#img_g{
-  width:100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
-.card-img-top{
-  object-fit: cover;
-  width: 100%;
-  height: 300px;
-  
-}
-.card{
-  width: 500px;
-  height: 500px;
-  align-items: center;
-}
-.card2{
-  height: 500px;
-}
+} */
 .card-text{
   list-style-type:square;
-  margin-top: 10px;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
-.flipContainer{
+.cardContainer{
+  margin-top: 10rem;
+  margin-bottom: 6rem;
   display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-  /* justify-content: center;
-  justify-content: space-evenly; */
-  background-color:transparent ;
-  z-index: 10000px;
- 
+    height:500px;
+    width:30%;
 }
+
 #git{
   color:black !important; 
+  margin-bottom: 3rem;
 }
 #case{
-  width: 150px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 11px 1rem;
+  /* margin: 0 0.5rem ; */
+  width: 7.5rem;
 
 }
 .container-fluid{
   margin-top: 3rem;
+  /* margin-bottom: 3rem; */
 }
 .card-title{
-  padding-top: 10px;
+  margin: 0;
+  margin-top: 1rem;
 }
 

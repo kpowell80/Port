@@ -1,0 +1,176 @@
+.hero_image2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/projectimages/ellipse.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.case2{
+    display:flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+}
+.bigger{
+    padding:0px;
+    margin: 0px;
+    width: 100% !important;
+   
+    
+}
+.hero_text{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    padding:2%;
+}
+ .theProject2{
+    background-color: whitesmoke;
+    text-align: left;
+    padding:2%;
+    padding-left: 25%;
+    padding-right: 25%;
+}  
+.valueProp2{
+    color:black;
+    text-align: left;
+    padding:2%; 
+   
+}
+.user{
+    height: 300px;
+}
+.summary{
+    background-color:gray;
+    text-align:left;
+    padding:2%;
+}
+.questions2{
+    background-color:whitesmoke;
+    text-align: left;
+    padding:2%;
+}
+.researchPlan2{
+    text-align: left;
+    padding:2%;
+    padding-right: 2%;
+}
+.tools{
+    background-color:lightgrey;
+    text-align: center;
+    padding:2%;
+}
+.gridtextbox1{
+    padding-top: 1%;
+    align-items: left;
+    padding-left: 4% !important;
+    font-size:  22px;
+    
+    }
+.gridtextbox2{
+        align-items: right;
+        /* padding-right: 10% !important; */
+        padding-top: 1%;
+    }
+.gridtextbox3{
+        align-items: left;
+        padding-top: 1%;
+    }
+.red{
+    max-height: 500px;
+    width: auto;
+    padding:1%;
+    
+}
+.li{
+    list-style-type: none;
+} 
+
+.findings2{
+    text-align: center;
+    padding:2%;
+    background-color: whitesmoke;
+}
+.now2{
+    text-align: center;
+    padding:2%;
+   max-height: 900px;
+    background-color: whitesmoke;
+}
+.gridtextbox4{
+    align-items: right;
+    padding-top: 1%;
+}
+/* .game{
+    height: 20%;
+    width: auto;
+    padding:1%;
+} */
+#go:hover{
+    background-color: silver;
+}
+.thoughts{
+    text-align: center;
+    padding:2%;
+}  
+.mood{
+    height: 300px;
+}
+.site{
+    height: 500px;
+    width: 400px;
+}
+.before{
+    height: 300px;
+    padding:20px;
+}
+.after{
+    height: 300px;
+    padding:20px;
+}
+.last2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/projectimages/ellipse.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    text-align: center;
+    padding-top: 4%;
+}
+#projects_button2{
+    margin: 2%;
+    background-color: #e7e7e7; color: black;
+    font-size: 20px;
+    border-radius: 4px;
+    padding:1%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+}
+#projects_button2:hover{
+    background-color: black; color: #e7e7e7;
+    transform: translateY(-7px);
+    box-shadow: 0px 15px 20px 	rgb(255,215,0);
+  
+}
+.found{
+    text-align: left;
+    padding:2%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.now_text{
+    display: inline-block;
+    text-align: left;
+    padding:2%;
+}
+.gridtextbox7{
+    text-align: left;
+    padding:2%;
+}
+.yep{
+    padding-right: 5%;
+}

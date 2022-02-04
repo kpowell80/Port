@@ -1,139 +1,130 @@
-import React from 'react';
+import React, {useState} from "react";
 import './cards.css';
+import {useSpring,animated} from "react-spring";
 import Typed from 'react-typed';
-// import Card from 'react-bootstrap/Card';
-// import Row from 'react-bootstrap/Row';
-// import CardGroup from 'react-bootstrap/CardGroup';
+import Row from 'react-bootstrap/Row';
 import gov from"../../images/projectimages/blckwhns.png";
-import colorg from"../../images/projectimages/nsaport.png";
 import colorp from'../../images/projectimages/Rectangle 16.png';
-// import mobile from '../../images/projectimages/spikeport-2.png';
-import spike from '../../images/projectimages/Rectangle 56.png';
-// import spike from '../../images/projectimages/spikebw.png';
 import video from '../../images/Rectangle 57.png';
 import planta from '../../images/projectimages/bwplantn.png';
 import hhbw from '../../images/projectimages/hhportbw.png';
-import HH from '../../images/projectimages/hhport.png';
+import {
+  Link
+} from "react-router-dom";
+// import Case1 from "../casestudies/Case1";
 
 
-function Cards() {
+function Card() {
+  const [show, setShown] = useState(false);
+
+  const props3 = useSpring({
+    transform: show ? "scale(1.03)" : "scale(1)",
+    boxShadow: show
+      ? "0 20px 25px rgb(0 0 0 / 25%)"
+      : "0 2px 10px rgb(0 0 0 / 8%)"
+  });
+
   return (
     
-      <div className="container-fluid  p-5 bg-light" >
-         <h1 className="projects" >Projects.</h1> 
-          <p className="hi"> <Typed 
-                strings={[
-                    "",
-                    "Government Agency Web Redesign",
-                    "Children's Charity Web Redesign",
-                    "Plantagochi Plant Watering App",
-                    "Covid Safe Travel App",
-                    "",
-                    "",]}
-                    typeSpeed={40}
-                    backSpeed={50}
-                    loop 
-                />
-          </p>
-           <p className="projects">My Github Page. <br></br>
-              <a href ="https://github.com/kpowell80" id="git" target="blank" rel="noreferrer"> github.com/kpowell80</a>
-           </p>
-        <div className="row">
-          <div className="flipContainer col-xl-5 lg-5 col-md-5 col-sm-12" >
-            <div className="flip">
-            <div className="flip-card" id="card1">
-            <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src= {gov} alt="govt"  id="img_g"/>
-            </div>
-            <div className="flip-card-back">
-                <div className="card">
-                <img class="card-img-top" src={colorg} id="img1b" alt="web"/>
+    <div className="container-fluid  p-5 bg-light" id="projects" >
+    <h1 className="projects" >Projects.</h1> 
+     <p className="hi"> <Typed 
+           strings={[
+               "",
+               "Government Agency Web Redesign",
+               "Children's Charity Web Redesign",
+               "Plantagochi Plant Watering App",
+               "Covid Safe Travel App",
+               "",
+               "",]}
+               typeSpeed={40}
+               backSpeed={50}
+               loop 
+           />
+     </p>
+      <p className="projects">My Github Page. <br></br>
+         <a href ="https://github.com/kpowell80" id="git" target="blank" rel="noreferrer"> github.com/kpowell80</a>
+      </p>
+    <Row>
+   
+    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12">
+    <animated.div className="one"
+    style={props3}
+    onMouseEnter={() => setShown(true)}
+    onMouseLeave={() => setShown(false)}
+  >
+   
+                <img class="img_g1" src={gov} id="img1b" alt="web"/>
                 <h5 class="card-title">NSA WEBSITE/MOBILE REDESIGN</h5>
                 <ul class="card-text" style={{alignContent:"center"}}> 
                   <li>Redline/Competitor analysis</li>
                   <li>Usability Testing</li>
                   <li>Prototyping/Ideation</li>
                </ul>
-               <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" class="btn btn-dark" alt="case">Full Case Study</a>
-                </div>
-            </div>
-          </div>
-            </div>
-          </div>
-          </div>
-          <div className="flipContainer col-xl-5 lg-5 col-md-5 col-sm-12">
-          <div className="flip">
-          <div className="flip-card" id="card2">
-            <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src={planta}id="img_g" alt="plant"/> </div>
-              <div className="flip-card-back">
-              <div className="card">
-              <img class="card-img-top" src={colorp} alt="plant" id="img1b"/>
-            <h5 class="card-title">PLANT WATERING APP</h5>
-            <ul class="card-text" style={{alignContent:"center"}}> 
+               <Link to="./Govt" class="btn btn-dark" alt="govt">Full Case Study</Link>
+               </animated.div> 
+               </div>
+    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12">
+    <animated.div className="one"
+    style={props3}
+    onMouseEnter={() => setShown(true)}
+    onMouseLeave={() => setShown(false)}
+  >
+   
+                <img class="img_g1" src={planta} alt="plant" hoverSrc={colorp} />
+                <h5 class="card-title">PLANT WATERING ORIGINAL APP</h5>
+                <ul class="card-text" style={{alignContent:"center"}}> 
                   <li>User Interviews/Survey</li>
                   <li>User Matrix</li>
                   <li>Creating POV</li>
                </ul>
-            <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" id="case"class="btn btn-dark" size="lg">Full Case Study</a>
-            </div>
-          </div>
-            </div>
-          </div>
-          </div>
-          </div>
-          <div className="flipContainer col-xl-5 lg-5 col-md-5 col-sm-12">
-            <div className="flip">
-            <div className="flip-card" id="card3">
-            <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src= {video} alt="spike"  id="img_g"/>
-              </div>
-              <div className="flip-card-back">
-              <div className="card">
-              <img class="card-img-top" src={spike} alt="spike"id="img1b"/>
-            <h5 class="card-title">CHARITY WEBSITE REDESIGN</h5>
-            <ul class="card-text" style={{alignContent:"center"}}> 
-                  <li>Executive Director Interview - Identify PP</li>
+               <Link to="./Case1" class="btn btn-dark" alt="case">Full Case Study</Link>
+              
+               </animated.div>  
+          </div> 
+    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12">
+    <animated.div className="one"
+    style={props3}
+    onMouseEnter={() => setShown(true)}
+    onMouseLeave={() => setShown(false)}
+  >
+   
+                <img class="img_g" src={video} alt="spike"/>
+                <h5 class="card-title">CHARITY WEBSITE REDESIGN</h5>
+                <ul class="card-text" style={{alignContent:"center"}}> 
+                  <li>Executive Director Interview</li>
                   <li>Affinity Diagram </li>
                   <li>User Flow</li>
                </ul>
-            <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" class="btn btn-dark">Go to Figma</a>
-            </div>
-            </div>
-          </div>
-            </div>
-          </div>
-          </div>
-        <div className="flipContainer col-xl-5 lg-5 col-md-5 col-sm-12">
-            <div className="flip">
-            <div className="flip-card" id="card4">
-            <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src= {hhbw} alt="hitchhiker"  id="img_g"/>
-              </div>
-              <div className="flip-card-back">
-              <div className="card"> 
-              <img class="card-img-top" src={HH} alt="Hitch" id="img1b"/>
-            <h5 class="card-title">MOBILE TRAVEL APP</h5>
-            <ul class="card-text" style={{alignContent:"center"}}> 
+               <Link to="./Hitch" class="btn btn-dark" alt="hitch">Full Case Study</Link>
+              
+               </animated.div>  
+          </div> 
+    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12">
+    <animated.div className="one"
+    style={props3}
+    onMouseEnter={() => setShown(true)}
+    onMouseLeave={() => setShown(false)}
+  >
+   
+                <img class="img_g"src={hhbw} alt="Hitch"/>
+                <h5 class="card-title">MOBILE TRAVEL ORIGINAL APP</h5>
+                <ul class="card-text" style={{alignContent:"center"}}> 
                   <li>Competitor Analysis</li>
                   <li>Empathy Mapping</li>
                   <li>Usability Testing</li>
                </ul>
-            <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" class="btn btn-dark">Go to Figma</a>
-            </div>
-            </div>
+               <Link to="./Hitch" class="btn btn-dark" alt="hitch">Full Case Study</Link>
+              
+               </animated.div>  
+          
           </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        </div>
- 
-  )
-}
+         </Row>
+    </div>     
+       
+  );
+          
 
-export default Cards;
+
+}
+export default Card;

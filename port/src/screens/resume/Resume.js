@@ -32,7 +32,7 @@ function Resume() {
                     <Row>
                     <Col lg={6} id="summary" className="gridtextbox1" > - SUMMARY</Col>
                     <Col lg={6} className="gridtextbox2">
-                    Applying core UX/UI knowledge (e.g., Figma, Adobe X, React.js, HTML/CSS) and superior customer engagement experience to develop applications that provide superior user experiences. <br></br><br></br><br></br><br></br>
+                    Applying core UX/UI knowledge (e.g., Figma, Adobe X, React.js, HTML/CSS) and expert customer engagement experience, to develop applications that provide superior user experiences. <br></br><br></br><br></br><br></br>
                     </Col>
                     </Row>
                     <Row>

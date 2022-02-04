@@ -15,7 +15,7 @@
     height: 500px;
     object-fit: fill;
     background-color: whitesmoke;
-    
+    border-radius: 10px;
 }
 .about_container p{
    width: 500px;
@@ -24,6 +24,7 @@
      object-fit: scale-down;
      padding: 40px;
      background-color: whitesmoke;
+     border-radius: 10px;
 }
 
 @media only screen and (max-width: 900px){
@@ -40,7 +41,7 @@
   
 }
 #talk{
-    margin-bottom: 10%;
+    margin-bottom: 3%;
 }
 .skills{
     text-decoration: black;

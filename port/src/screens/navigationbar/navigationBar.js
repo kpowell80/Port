@@ -1,10 +1,13 @@
-import React from 'react'
-import './navigation.css'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import {navigationLinks} from '../../helpers/navigationLinks'
-import unsolved from"../../images/b-wcubeun.png"
-import solutions from"../../images/blck-wsolve5.png"
+import React from 'react';
+import './navigation.css';
+import {
+    Link
+  } from "react-router-dom";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import {navigationLinks} from '../../helpers/navigationLinks';
+import unsolved from"../../images/projectimages/noshadow9u.png";
+import solutions from"../../images/noblusolv10.png";
 // import Image from 'react-bootstrap/Image';
 import HoverImage from "react-hover-image";
 
@@ -28,8 +31,10 @@ function NavigationBar(){
            collapseOnSelect 
            expand="md">
                <Navbar.Brand style={{marginLeft:'2rem'}} href="#home">
+                <Link to="/" className="nav_brand">
                <HoverImage src={unsolved} className="logo" style={{display: 'inline-block'}} hoverSrc={solutions} onClick= {Solve}></HoverImage>
                 <span className="small" style={{display:'inline-block'}}>Katelin Reilly</span>
+                </Link>
                </Navbar.Brand>
                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                <Navbar.Collapse style={{justifyContent: 'flex-end', marginRight:'2rem'}}>

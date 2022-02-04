@@ -1,0 +1,165 @@
+.hero_image3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/projectimages/world.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.case3{
+    display:flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+}
+.bigger{
+    padding:0px;
+    margin: 0px;
+    width: 100% !important;  
+}
+.hero_text{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    padding:2%;
+}
+ .theProject3{
+    background-color: whitesmoke;
+    text-align: left;
+    padding:2%;
+    padding-left: 25%;
+    padding-right: 25%;
+}  
+.valueProp{
+    color:black;
+    text-align: left;
+    padding:2%; 
+   
+}
+.user{
+    height: 300px;
+}
+.summary{
+    background-color:gray;
+    text-align: center;
+    padding:2%;
+}
+.questions5{
+    text-align: center;
+    padding:2%;
+}
+.researchPlan3{
+    text-align: center;
+    padding:2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.realizations{
+    text-align: left;
+}
+.tools{
+    background-color:lightgrey;
+    text-align: center;
+    padding:2%;
+}
+.gridtextbox1{
+    padding-top: 1%;
+    align-items: left;
+    text-align: left;
+    padding-left: 4% !important;
+    font-size:  22px;
+    
+    }
+.gridtextbox2{
+        align-items: right;
+        padding-right: 10% !important;
+        padding-top: 1%;
+    }
+.gridtextbox3{
+        align-items: right;
+        text-align: left;
+        padding-left:5% !important;
+        padding-top: 1%;
+    }
+.red{
+    max-height: 500px;
+    width: auto;
+    padding:1%;
+    
+}
+.li{
+    list-style-type: none;
+} 
+
+.findings{
+    text-align: left;
+    padding:2%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.now{
+    text-align: center;
+    padding:2%;
+   max-height: 900px;
+    background-color: whitesmoke;
+}
+.gridtextbox9 h5{
+    align-items: right;
+    text-align: left;
+    padding-top: 1%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+/* .game{
+    height: 20%;
+    width: auto;
+    padding:1%;
+} */
+#go:hover{
+    background-color: silver;
+}
+.thoughts{
+    text-align: center;
+    padding:2%;
+}  
+.last3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/projectimages/world.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    text-align: center;
+    padding-top: 4%;
+}
+#projects_button3{
+    margin: 2%;
+    background-color: #e7e7e7; color: black;
+    font-size: 20px;
+    border-radius: 4px;
+    padding:1%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+
+}
+#projects_button3:hover{
+    background-color: black; color: #e7e7e7;
+    transform: translateY(-7px);
+    box-shadow: 0px 15px 20px 	rgb(139,69,19);
+  
+}
+.keep3{
+    color: white;
+}
+.user5{
+    height: 15%;
+    width: auto;
+    padding:1%;
+}
+.nos{
+    text-align: center;
+    padding:2%;
+   max-height: 900px;
+    background-color: whitesmoke; 
+}
