@@ -96,7 +96,7 @@ function Card() {
                   <li>Affinity Diagram </li>
                   <li>User Flow</li>
                </ul>
-               <Link to="./Hitch" class="btn btn-dark" alt="hitch">Full Case Study</Link>
+               <Link to="./Variety" class="btn btn-dark" alt="hitch">Full Case Study</Link>
               
                </animated.div>  
           </div> 
