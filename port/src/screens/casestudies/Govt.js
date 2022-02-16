@@ -37,11 +37,11 @@ function Govt(){
           </Col>
           </Row>
         <Row>
-        <Col lg={6} id="vp" className="gridtextbox1" > 
-        <img src={redline1} className="red" alt="redline"></img>
-        <img src={redline2} className="red" alt="redline"></img>
+        <Col lg={6} className="grid-container8" > 
+        <img src={redline1} className="red1" alt="redline"></img>
+        <img src={redline2} className="red1"loading="lazy" alt="redline"></img>
         </Col>
-        <Col lg={6} className="gridtextbox2">
+        <Col lg={6} className="gridtextbox7">
           <div className="valueProp2">
             <h4>We Created:</h4> <br/> 
             <br/> 
@@ -119,9 +119,9 @@ Add more color. Make it inspiring. </h4><br/><h3>What to do next? Create a Mood 
           </div>
           <div className="last2" >
          <h3 className="keep">More Projects...</h3>
-         <Link to="/Hitch" class="btn btn-dark" id="projects_button2" alt="hitchhiker">Original Travel App</Link>
-         <Link to="/Variety" class="btn btn-dark" id="projects_button2" alt="charity">Charity Website Redesign</Link>
-         <Link to="/Case" class="btn btn-dark" id="projects_button2" alt="case">Plantagochi</Link>
+         <Link to="/Hitch" className="btn btn-dark" id="projects_button2" alt="hitchhiker">Original Travel App</Link>
+         <Link to="/Variety" className="btn btn-dark" id="projects_button2" alt="charity">Charity Website Redesign</Link>
+         <Link to="/Case" className="btn btn-dark" id="projects_button2" alt="case">Plantagochi</Link>
        </div>
        </div>
          

@@ -1,7 +1,7 @@
 export const navigationLinks = [
     {
         name:'HOME',
-        ref:'#home'
+        ref:'/'
     },
     {
         name:'ABOUT ME',
@@ -17,5 +17,8 @@ export const navigationLinks = [
         name:'CONTACT',
         ref:'#contact'
     },
-  
+    // {
+    //     name:'',
+    //     ref:'/home'
+    // },
 ]

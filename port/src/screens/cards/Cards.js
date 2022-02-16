@@ -1,13 +1,9 @@
 import React, {useState} from "react";
 import './cards.css';
 import {useSpring,animated} from "react-spring";
+import cards from "../../helpers/cardsLinks";
 import Typed from 'react-typed';
 import Row from 'react-bootstrap/Row';
-import gov from"../../images/projectimages/blckwhns.png";
-import colorp from'../../images/projectimages/Rectangle 16.png';
-import video from '../../images/Rectangle 57.png';
-import planta from '../../images/projectimages/bwplantn.png';
-import hhbw from '../../images/projectimages/hhportbw.png';
 import {
   Link
 } from "react-router-dom";
@@ -46,79 +42,27 @@ function Card() {
          <a href ="https://github.com/kpowell80" id="git" target="blank" rel="noreferrer"> github.com/kpowell80</a>
       </p>
     <Row>
-   
-    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12">
+    {cards.map(card=>(
+    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12" key={cards}>
     <animated.div className="one"
     style={props3}
     onMouseEnter={() => setShown(true)}
     onMouseLeave={() => setShown(false)}
   >
-   
-                <img class="img_g1" src={gov} id="img1b" alt="web"/>
-                <h5 class="card-title">NSA WEBSITE/MOBILE REDESIGN</h5>
+
+                <img class="img_g1" key={card.id} src={card.image} id="img1b" alt="web"/>
+                <h5 class="card-title">{card.title}</h5>
                 <ul class="card-text" style={{alignContent:"center"}}> 
-                  <li>Redline/Competitor analysis</li>
-                  <li>Usability Testing</li>
-                  <li>Prototyping/Ideation</li>
+                  <li>{card.li1}</li>
+                  <li>{card.li2}</li>
+                  <li>{card.li3}</li>
                </ul>
-               <Link to="./Govt" class="btn btn-dark" alt="govt">Full Case Study</Link>
+               <Link to={card.link} class="btn btn-dark" alt="govt">Full Case Study</Link>
+ 
                </animated.div> 
                </div>
-    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12">
-    <animated.div className="one"
-    style={props3}
-    onMouseEnter={() => setShown(true)}
-    onMouseLeave={() => setShown(false)}
-  >
+    ))}
    
-                <img class="img_g1" src={planta} alt="plant" hoverSrc={colorp} />
-                <h5 class="card-title">PLANT WATERING ORIGINAL APP</h5>
-                <ul class="card-text" style={{alignContent:"center"}}> 
-                  <li>User Interviews/Survey</li>
-                  <li>User Matrix</li>
-                  <li>Creating POV</li>
-               </ul>
-               <Link to="./Case1" class="btn btn-dark" alt="case">Full Case Study</Link>
-              
-               </animated.div>  
-          </div> 
-    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12">
-    <animated.div className="one"
-    style={props3}
-    onMouseEnter={() => setShown(true)}
-    onMouseLeave={() => setShown(false)}
-  >
-   
-                <img class="img_g" src={video} alt="spike"/>
-                <h5 class="card-title">CHARITY WEBSITE REDESIGN</h5>
-                <ul class="card-text" style={{alignContent:"center"}}> 
-                  <li>Executive Director Interview</li>
-                  <li>Affinity Diagram </li>
-                  <li>User Flow</li>
-               </ul>
-               <Link to="./Variety" class="btn btn-dark" alt="hitch">Full Case Study</Link>
-              
-               </animated.div>  
-          </div> 
-    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12">
-    <animated.div className="one"
-    style={props3}
-    onMouseEnter={() => setShown(true)}
-    onMouseLeave={() => setShown(false)}
-  >
-   
-                <img class="img_g"src={hhbw} alt="Hitch"/>
-                <h5 class="card-title">MOBILE TRAVEL ORIGINAL APP</h5>
-                <ul class="card-text" style={{alignContent:"center"}}> 
-                  <li>Competitor Analysis</li>
-                  <li>Empathy Mapping</li>
-                  <li>Usability Testing</li>
-               </ul>
-               <Link to="./Hitch" class="btn btn-dark" alt="hitch">Full Case Study</Link>
-              
-               </animated.div>  
-          
-          </div>
          </Row>
     </div>     
        

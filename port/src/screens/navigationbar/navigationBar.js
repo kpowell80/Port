@@ -1,8 +1,5 @@
 import React from 'react';
 import './navigation.css';
-import {
-    Link
-  } from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import {navigationLinks} from '../../helpers/navigationLinks';
@@ -31,10 +28,10 @@ function NavigationBar(){
            collapseOnSelect 
            expand="md">
                <Navbar.Brand style={{marginLeft:'2rem'}} href="#home">
-                <Link to="/" className="nav_brand">
+         
                <HoverImage src={unsolved} className="logo" style={{display: 'inline-block'}} hoverSrc={solutions} onClick= {Solve}></HoverImage>
                 <span className="small" style={{display:'inline-block'}}>Katelin Reilly</span>
-                </Link>
+              
                </Navbar.Brand>
                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                <Navbar.Collapse style={{justifyContent: 'flex-end', marginRight:'2rem'}}>

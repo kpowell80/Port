@@ -60,14 +60,13 @@
     text-align: center;
     padding:2%;
 }
-.gridtextbox1{
-    padding-top: 1%;
+.grid-container8{
+    display: grid;
+    padding-top: 2%;
     align-items: left;
-    padding-left: 4% !important;
-    font-size:  22px;
-    
+    font-size:  22px; 
     }
-.gridtextbox2{
+.gridtextbox7{
         align-items: right;
         /* padding-right: 10% !important; */
         padding-top: 1%;
@@ -76,9 +75,11 @@
         align-items: left;
         padding-top: 1%;
     }
-.red{
+.red1{
+    display: block;
     max-height: 500px;
-    width: auto;
+    max-width: 100%;
+   object-fit: contain !important;
     padding:1%;
     
 }
