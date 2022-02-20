@@ -74,7 +74,7 @@ function Resume() {
 
                      </Row>
                      <div className="resLink">
-                     <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" class="btn btn-dark">Full Resume</a>
+                     <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" className="btn btn-dark">Full Resume</a>
                      </div>
                     
                     

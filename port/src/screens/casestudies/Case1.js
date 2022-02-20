@@ -1,6 +1,6 @@
 import React from "react";
 import'./case1.css';
-import {Player} from 'video-react';
+import ReactPlayer from 'react-player';
 import {Row, Col} from 'react-grid-system';
 import Navigation from '../navigationbar/navigationBar';
 import greenguy from '../../images/projectimages/greenguystand.png';
@@ -23,8 +23,8 @@ function Case1(){
      
         <div className="case1" id="">
           <Navigation/>
-          <div className="hero_image" >
-          <div className="hero_text">
+          <div className="hero_image9" >
+          <div className="hero_text9">
             <h3>Case Study</h3>
             <h1>Plantagochi</h1>
           </div>
@@ -53,7 +53,7 @@ User Matrix<br/>
 We used a competitor analysis to target two of the most commonly mentioned sites from our data research, two apps that were highly ranked in the app store</h4>
 </Col>
 </Row>
-<div className="findings">
+<div className="findings77">
             <section className="findings_text"><h3>What we found in our research:</h3><h4>
 
 The biggest problem people encountered was watering plants.<br/>
@@ -93,10 +93,8 @@ What are obstructions to caring for plants in your home?<br/><br/><h3>We created
     
           <Row className="now1">
           <Col lg={12}  className="gridtextbox4" > 
-          <div >
             <div className="now_text">
              <h3>How do we engage the user?</h3><h2>Create a game with rewards and feedback!!!</h2><br/></div>
-          </div>
           <div className="gameContainer">
           <img src={points} className="game" alt="game"></img>
           <img src={game} className="game" alt="game"></img>
@@ -106,11 +104,18 @@ What are obstructions to caring for plants in your home?<br/><br/><h3>We created
           </Col>
           </Row>
           <Row className="wonder">
-          <Col lg={6} className="left" maxWidth="md">
-          <Player  src={plantv} fluid={false} className="player"  data-setup= '{"liveui": true, "liveTracker": false}'playing
-  playIcon={<button>Play</button>}/>
+          <Col lg={6}>
+   <ReactPlayer className="planta"
+        url={plantv}
+        playing
+        loop
+        muted
+        width="100%"
+        height="100%"
+      />   
           </Col>
-          <Col lg={6} className="final" maxWidth="md">
+          <Col lg={6} className="final" >
+            <div className="final_text">
             <h3>Play the Video!</h3>
             <h4>An example of our usability testing in the final stages.</h4><br/>
             <h5>Sign Up for Plantagochi</h5><br/>
@@ -123,23 +128,27 @@ What are obstructions to caring for plants in your home?<br/><br/><h3>We created
              <h5>Pick a plant avatar</h5><br/>
              <h5>Name the plant</h5><br/>
              <h5>Scedule the plantcare</h5><br/>
-             
+             </div>
           </Col>
           </Row>
-          <Row className="thoughts">
-          <Col lg={12}  className="gridtextbox4" >
+         
+          <Row className="now10">
+          <Col lg={12} className="gridtextbox7">
             <h3>After usability testing and looking forward:</h3> 
           <h4>Connect the pot to the plant.<br/> Be able to recommend the right pot.<br/>
 Can you create your plantagochi prior to having the plant?<br/>
 Allow users to form their own social groups within the community. <br/></h4>
+          <div className="looks">
           <img src={plantcare} className="care" alt="care"></img>
+          </div>
           </Col>
-          </Row>
+         </Row>
+
        <div className="last" >
          <h3 className="keep">More Projects...</h3>
-         <Link to="/Govt" class="btn btn-dark" id="projects_button" alt="govt">Govt Redesigned Website</Link>
-         <Link to="/Hitch" class="btn btn-dark" id="projects_button" alt="hitchhiker">Original Travel App</Link>
-         <Link to="/Variety" class="btn btn-dark" id="projects_button" alt="charity">Charity Website Redesign</Link>
+         <Link to="/Govt" className="btn btn-dark" id="projects_button" alt="govt">Govt Redesigned Website</Link>
+         <Link to="/Hitch" className="btn btn-dark" id="projects_button" alt="hitchhiker">Original Travel App</Link>
+         <Link to="/Variety" className="btn btn-dark" id="projects_button" alt="charity">Charity Website Redesign</Link>
        </div>
        </div>
        </div>

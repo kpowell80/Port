@@ -8,7 +8,7 @@
 .case2{
     display:flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 3%;
 
 }
 .bigger{
@@ -18,11 +18,14 @@
    
     
 }
-.hero_text{
+.hero_text4{
     color:white;
     font-weight: bold;
     text-align: center;
-    padding:2%;
+    padding:4%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 3%;
 }
  .theProject2{
     background-color: whitesmoke;
@@ -53,7 +56,7 @@
 .researchPlan2{
     text-align: left;
     padding:2%;
-    padding-right: 2%;
+    padding-right: 4%;
 }
 .tools{
     background-color:lightgrey;

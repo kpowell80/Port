@@ -20,7 +20,7 @@ function Govt(){
         <div className="case2" id="">
            <Navigation/>
           <div className="hero_image2">
-          <div className="hero_text">
+          <div className="hero_text4">
             <h3>Case Study</h3>
             <h1>Govt Website Redesign</h1>
           </div>
@@ -37,11 +37,11 @@ function Govt(){
           </Col>
           </Row>
         <Row>
-        <Col lg={6} className="grid-container8" > 
+        <Col lg={6} md={12}className="grid-container8" > 
         <img src={redline1} className="red1" alt="redline"></img>
         <img src={redline2} className="red1"loading="lazy" alt="redline"></img>
         </Col>
-        <Col lg={6} className="gridtextbox7">
+        <Col lg={6} md={12}className="gridtextbox7">
           <div className="valueProp2">
             <h4>We Created:</h4> <br/> 
             <br/> 
@@ -57,7 +57,7 @@ function Govt(){
 </Col>
         </Row>
           <Row className="questions2">
-          <Col lg={6} id="vp" className="gridtextbox1" > 
+          <Col lg={6} md={12} id="vp" className="gridtextbox1" > 
           <div >
              <h3>Gorilla Interview 5 people. 5 Essential Tasks:<br/>
 What is the NSA ?<br/>
@@ -69,17 +69,17 @@ We used Zoom to conduct interviews with anonymous participants<br/>
 </h3>
           </div>
           </Col>
-          <Col lg={6} className="gridtextbox3">
+          <Col lg={6} md={12}className="gridtextbox3">
           <img src={user} className="user" alt="user"></img>
           <h4>User Persona</h4>
        
           </Col>
           </Row>
-          <Row className="research2">
-            <Col lg={6} id="vp" className="gridtextbox1">
+          <Row className="researchPlan2">
+            <Col lg={6} md={12}id="vp" className="gridtextbox1">
               <img src={site} className="site" alt="site pic"></img>
             </Col>
-            <Col lg={6} className="gridtextbox3">
+            <Col lg={6} md={12}className="gridtextbox3">
           <div >
             <h3>We needed a lot of research: </h3><br/>
 Usability Testing <br/>
@@ -91,6 +91,8 @@ User Matrix<br/>
           </div>
           </Col>
           </Row>
+          <Row>
+          <Col lg={12}>
           <div className="findings2">
             <section className="found" ><h3>What we found in our research:</h3><h4>
 
@@ -100,6 +102,8 @@ Add more color. Make it inspiring. </h4><br/><h3>What to do next? Create a Mood 
  <img src={mood} className="mood" alt="mood"></img>
 
           </div>  
+          </Col>
+          </Row>
           <div className="now2" >
           <section className="found">
              <h3>How do we engage the user?</h3><h2>Simplifiy and Create a Style guide!!!</h2><br/>
@@ -107,11 +111,11 @@ Add more color. Make it inspiring. </h4><br/><h3>What to do next? Create a Mood 
          </section>
          </div>
           <Row className="thoughts">
-          <Col lg={6}  className="gridtextbox7" >
+          <Col lg={6}  md={12}className="gridtextbox7" >
             <h3>After usability testing and looking forward:</h3> 
           <h5>Before and After</h5>
           </Col>
-          <Col lg={6}  className="gridtextbox5" >
+          <Col lg={6}  md={12}className="gridtextbox5" >
             <img src={before} className="before" alt="screen"></img>
             <img src={after} className="after" alt="screen"></img>
           </Col>
@@ -121,7 +125,7 @@ Add more color. Make it inspiring. </h4><br/><h3>What to do next? Create a Mood 
          <h3 className="keep">More Projects...</h3>
          <Link to="/Hitch" className="btn btn-dark" id="projects_button2" alt="hitchhiker">Original Travel App</Link>
          <Link to="/Variety" className="btn btn-dark" id="projects_button2" alt="charity">Charity Website Redesign</Link>
-         <Link to="/Case" className="btn btn-dark" id="projects_button2" alt="case">Plantagochi</Link>
+         <Link to="/Case1" className="btn btn-dark" id="projects_button2" alt="case">Plantagochi</Link>
        </div>
        </div>
          

@@ -22,7 +22,7 @@ function Card() {
 
   return (
     
-    <div className="container-fluid  p-5 bg-light" id="projects" >
+    <div className="container-fluid  p-5 bg-light" >
     <h1 className="projects" >Projects.</h1> 
      <p className="hi"> <Typed 
            strings={[
@@ -50,14 +50,14 @@ function Card() {
     onMouseLeave={() => setShown(false)}
   >
 
-                <img class="img_g1" key={card.id} src={card.image} id="img1b" alt="web"/>
-                <h5 class="card-title">{card.title}</h5>
-                <ul class="card-text" style={{alignContent:"center"}}> 
+                <img className="img_g1" key={card.id} src={card.image} id="img1b" alt="web"/>
+                <h5 className="card-title">{card.title}</h5>
+                <ul className="card-text" style={{alignContent:"center"}}> 
                   <li>{card.li1}</li>
                   <li>{card.li2}</li>
                   <li>{card.li3}</li>
                </ul>
-               <Link to={card.link} class="btn btn-dark" alt="govt">Full Case Study</Link>
+               <Link to={card.link} className="btn btn-dark" alt="govt">Full Case Study</Link>
  
                </animated.div> 
                </div>
