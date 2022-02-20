@@ -1,7 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
 import './resume.css';
-import Zoom from 'react-reveal/Zoom';
 import {Container,Row, Col} from 'react-grid-system';
 
 
@@ -9,7 +8,7 @@ import {Container,Row, Col} from 'react-grid-system';
 function Resume() {
     return (
         <div className="about" id="resume">
-            <Zoom>
+           
                 <h1 className="res">Resume&#769;.</h1>
                 <Typed
                     strings={[
@@ -25,7 +24,7 @@ function Resume() {
                     backSpeed={50}
                     loop />
                
-            </Zoom>
+         
             
                 <Container className="resumeShape">
                  

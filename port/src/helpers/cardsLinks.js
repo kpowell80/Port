@@ -14,7 +14,7 @@ title:"NSA WEBSITE/MOBILE REDESIGN",
 li1:"Redline/Competitor analysis",
 li2:"Usability Testing",
 li3:"Prototyping/Ideation",
-link:"./Govt"
+connect:"./Govt"
 },
 {
     id:2,
@@ -23,7 +23,7 @@ link:"./Govt"
     li1:"User Interviews/Survey",
     li2:"User Matrix",
     li3:"Creating POV",
-    link:"./Case1"
+    connect:"./Case1"
     },
     {
         id:3,
@@ -32,7 +32,7 @@ link:"./Govt"
         li1:"Executive Director Interview",
         li2:"Affinity Diagram",
         li3:"User Flow",
-        link:"./Variety"
+        connect:"./Variety"
         },
         {
             id:4,
@@ -41,7 +41,7 @@ link:"./Govt"
             li1:"Competitor Analysis",
             li2:"Empathy Mapping",
             li3:"Usability Testing",
-            link:"./Hitch"
+            connect:"./Hitch"
             },
 
 ]

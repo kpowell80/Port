@@ -57,7 +57,7 @@ function Card() {
                   <li>{card.li2}</li>
                   <li>{card.li3}</li>
                </ul>
-               <Link to={card.link} className="btn btn-dark" alt="govt">Full Case Study</Link>
+               <Link to={card.connect} className="btn btn-dark" alt="govt">Full Case Study</Link>
  
                </animated.div> 
                </div>

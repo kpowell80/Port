@@ -6,7 +6,7 @@ import ParticleAnimation from 'react-particle-animation'
 
 function Bye(){
     return(
-        <div className="jumbotron"> 
+        <div className="byes"> 
       <ParticleAnimation
  background={{ r: 21, g: 22, b: 23, a: 1 }}
  style ={{height:'45vh'}}
