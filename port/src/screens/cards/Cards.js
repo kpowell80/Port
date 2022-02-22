@@ -43,14 +43,14 @@ function Card() {
       </p>
     <Row>
     {cards.map(card=>(
-    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12" key={cards}>
+    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12" key={card.id}>
     <animated.div className="one"
     style={props3}
     onMouseEnter={() => setShown(true)}
     onMouseLeave={() => setShown(false)}
   >
 
-                <img className="img_g1" key={card.id} src={card.image} id="img1b" alt="web"/>
+                <img className="img_g1" src={card.image} id="img1b" alt="web"/>
                 <h5 className="card-title">{card.title}</h5>
                 <ul className="card-text" style={{alignContent:"center"}}> 
                   <li>{card.li1}</li>

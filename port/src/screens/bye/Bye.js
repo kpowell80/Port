@@ -15,10 +15,7 @@ function Bye(){
  interactive={true}
  color={{r:245, g:245,b:245, a:245}}
  />
-    <div id="main">
-      <h1 className="name">I create connections that solve design problems for the user.</h1>
-        
-    </div>
+      <h1 className="name">I create connections that solve design problems for the user.</h1>  
  </div>
       
     )
