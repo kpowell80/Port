@@ -47,11 +47,6 @@
     "clean": "if exist dist ( rd /S /Q dist)",
     "updateLink": "npm run clean && tsc && npm rm my-lib -g && npm link"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
