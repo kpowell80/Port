@@ -43,7 +43,7 @@ function Card() {
       </p>
     <Row>
     {cards.map(card=>(
-    <div className="cardContainer col-xl-4 lg-4 col-md-6 col-sm-12" key={card.id}>
+    <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12" key={card.id}>
     <animated.div className="one"
     style={props3}
     onMouseEnter={() => setShown(true)}
