@@ -144,7 +144,7 @@ Create Events page that draws you in and keeps you interested. <br/></h5>
          <h3 className="keep4">More Projects...</h3>
          <Link to="/Govt" className="btn btn-dark" id="projects_button4" alt="govt">Govt Redesigned Website</Link>
          <Link to="/Hitch" className="btn btn-dark" id="projects_button4" alt="hitchhiker">Original Travel App</Link>
-         <Link to="/Variety" className="btn btn-dark" id="projects_button4" alt="charity">Charity Website Redesign</Link>
+         <Link to="/Case1" className="btn btn-dark" id="projects_button4" alt="planta">Plantagochi</Link>
        </div>
           </div>
        

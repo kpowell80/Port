@@ -41,7 +41,7 @@ function Card() {
       <p className="projects">My Github Page. <br></br>
          <a href ="https://github.com/kpowell80" id="git" target="blank" rel="noreferrer"> github.com/kpowell80</a>
       </p>
-    <Row>
+    <Row className="across">
     {cards.map(card=>(
     <div className="cardContainer col-xl-3 lg-3 col-md-6 col-sm-12 " key={card.id}>
     <animated.div className="one"
