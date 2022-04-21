@@ -14,7 +14,7 @@ function Footer(){
     <div className="contact_container" id="contact">
         <div className="contact_data_links">
         <div>
-            <p>Washington DC</p>
+            <p>San Diego, CA</p>
             <p>Katelin Reilly</p>
             <p>reillykatelin0@gmail.com</p>
             <p><a href="http://linkedin.com/in/katelin-reilly-0abb45185">linkedin.com</a></p>

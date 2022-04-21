@@ -39,6 +39,13 @@ font-size:  22px;
     margin: 3rem;
 
 }
+@media only screen and (max-width: 500px){
+    .about_container{
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
 .text {
 	font-weight: bold;
 }
