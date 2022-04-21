@@ -31,17 +31,13 @@ function Resume() {
                     <Row>
                     <Col lg={6} id="summary" className="gridtextbox1" > - SUMMARY</Col>
                     <Col lg={6} className="gridtextbox2">
-                    Applying core UX/UI knowledge (e.g., Figma, Adobe X, React.js, HTML/CSS) and expert customer engagement experience, to develop applications that provide superior user experiences. <br></br><br></br><br></br><br></br>
+                    Applying core UX/UI knowledge (e.g., Figma, Adobe X, React.js, HTML/CSS) and expert customer engagement experience, to develop applications that provide superior user experiences. <br></br><br></br><br></br>
                     </Col>
                     </Row>
                     <Row>
                      <Col lg={6} id="experience"className="gridtextbox1">- EXPERIENCE</Col>
                      <Col lg={6} className="gridtextbox2">
-                    <div className="title">UX DESIGNER</div> <br></br> 
-                    Mind Work <div className="dates"> January 2022-Present</div> 
-                    Responsible for the research to rebuild website for more advanced targeting, greater impact and usability testing.
-                     <br></br><br></br>
-                     WEBMASTER <br></br><br></br>
+                     <div className="title">WEBMASTER</div> <br></br>
                     Variety - The Children's Charity<div className="dates"> August 2021-Present</div>
                     Responsible for the design and maintenance of the official web presence for Variety’s National Capital Region branch. Currently leading a ground up redesign of the site with a focus on increasing online donations.
                     <br></br><br></br><br></br>

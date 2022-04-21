@@ -29,9 +29,8 @@ function NavigationBar(){
            expand="md">
                <Navbar.Brand style={{marginLeft:'2rem'}} href="#home">
          
-               <HoverImage src={unsolved} className="logo" style={{display: 'inline-block'}} hoverSrc={solutions} onClick= {Solve}></HoverImage>
+               <HoverImage src={unsolved} className="logo" style={{display: 'inline-block'}} hoverSrc={solutions} onClick={Solve}></HoverImage>
                 <span className="small" style={{display:'inline-block'}}>Katelin Reilly</span>
-              
                </Navbar.Brand>
                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                <Navbar.Collapse style={{justifyContent: 'flex-end', marginRight:'2rem'}}>
