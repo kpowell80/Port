@@ -40,12 +40,16 @@ font-size:  22px;
 
 }
 @media only screen and (max-width: 500px){
-    .about_container{
+    .about{
         flex-direction: column;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding: 5%;
+    }
+    .resumeShape{
+        padding: 5%;
+        width: fit-content;
     }
 }
+
 .text {
 	font-weight: bold;
 }
