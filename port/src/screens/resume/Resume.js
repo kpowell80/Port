@@ -7,7 +7,7 @@ import {Container,Row, Col} from 'react-grid-system';
 
 function Resume() {
     return (
-        <div className="about" id="resume">
+        <div className="about55" id="resume">
            
                 <h1 className="res">Resume&#769;.</h1>
                 <Typed

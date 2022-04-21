@@ -31,9 +31,16 @@
     .about_container{
         flex-direction: column;
     }
+ 
+}
+@media only screen and (max-width: 500px){
+    .about_container{
+        flex-direction: column;
+    }
     .about_container p{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 3rem;
     }
  
 }

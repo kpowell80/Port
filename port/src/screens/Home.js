@@ -18,7 +18,6 @@ function Home(){
             <h3>UX/UI Designer</h3>
             <section>
             <Bye/>
-            
             </section>
          <div className="body">
            <ParticlesBg 
@@ -35,14 +34,17 @@ function Home(){
          <Resume/>
          <White/>
          <section>
-    {/* <ParticleAnimation
+    <ParticleAnimation
     background={{ r: 21, g: 22, b: 23, a: 1 }}
     style ={{height:'45vh'}}
+    numParticles={150}
+    density_auto={true}
+    density_area={800}
     particleSpeed={.2}
     particleRadius={1.5}
     color={{r:245, g:245,b:245, a:245}}
-    /> */}
-       <Bye/>
+    />
+       {/* <Bye/> */}
   </section>
   
    {/* <Contact/> */}

@@ -10,11 +10,12 @@
     position: absolute;
     width: 100%;
   }
-.container{
-    position: fixed;
+.byes{
+    /* position: fixed; */
     text-align: center;
     width: 100%;
     justify-content: center;
+    background-repeat: no-repeat;
 }
 
 
