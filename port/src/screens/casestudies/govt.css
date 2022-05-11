@@ -105,11 +105,10 @@
     align-items: right;
     padding-top: 1%;
 }
-/* .game{
+.style{
     height: 20%;
-    width: auto;
-    padding:1%;
-} */
+    width: 80%;
+}
 #go:hover{
     background-color: silver;
 }
@@ -163,8 +162,8 @@
 .found{
     text-align: left;
     padding:2%;
-    padding-left: 25%;
-    padding-right: 25%;
+    /* padding-left: 25%;
+    padding-right: 25%; */
 }
 .now_text{
     display: inline-block;
@@ -177,4 +176,18 @@
 }
 .yep{
     padding-right: 5%;
+}
+@media only screen and (max-width: 500px){
+    .mood{
+        flex-direction: column;
+        width:100%;
+    }
+    .style{
+        flex-direction: column;
+        width:100%;
+    }
+    .hero_text4{
+        margin-top: 15%;
+    }
+   
 }

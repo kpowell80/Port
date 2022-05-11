@@ -29,13 +29,13 @@ function Resume() {
                 <Container className="resumeShape">
                  
                     <Row>
-                    <Col lg={6} id="summary" className="gridtextbox1" > - SUMMARY</Col>
+                    <Col lg={6} id="summary" className="gridtextbox1" >  SUMMARY</Col>
                     <Col lg={6} className="gridtextbox2">
                     Applying core UX/UI knowledge (e.g., Figma, Adobe X, React.js, HTML/CSS) and expert customer engagement experience, to develop applications that provide superior user experiences. <br></br><br></br><br></br>
                     </Col>
                     </Row>
                     <Row>
-                     <Col lg={6} id="experience"className="gridtextbox1">- EXPERIENCE</Col>
+                     <Col lg={6} id="experience"className="gridtextbox1"> EXPERIENCE</Col>
                      <Col lg={6} className="gridtextbox2">
                      <div className="title">WEBMASTER</div> <br></br>
                     Variety - The Children's Charity<div className="dates"> August 2021-Present</div>
@@ -44,7 +44,7 @@ function Resume() {
                     </Col>
                     </Row>
                     <Row>
-                    <Col lg={6}id="word"className="gridtextbox1">- WORK</Col>
+                    <Col lg={6}id="word"className="gridtextbox1"> WORK</Col>
                     <Col lg={6} className="gridtextbox2">
                     PROPERTY MANAGER<br></br><br></br>
                    Consultant <div className="dates">June 2020-Present</div>
@@ -62,14 +62,14 @@ function Resume() {
                     </Col>
                     </Row>
                     <Row>
-                     <Col lg={6} id="education"className="gridtextbox1">- EDUCATION</Col>
+                     <Col lg={6} id="education"className="gridtextbox1"> EDUCATION</Col>
                      <Col lg={6} className="gridtextbox2">THE GEORGE WASHINGTON UNIVERSITY, Washington, DC, USA Certificate in User Experience / User Interface Design <br></br><br></br>
                     
                         CODING DOJO, Tysons Corner, VA, USA Certificate in Software Development</Col>
 
                      </Row>
                      <div className="resLink">
-                     <a href="https://docs.google.com/document/d/1DgrqMZmE4A2eAhr_XUF2Wzz8qZr0MGcULPRUS_Th640/edit?usp=sharing" className="btn btn-dark">Full Resume</a>
+                     <a href="https://docs.google.com/document/d/e/2PACX-1vQ-2t7VUu_no4lBL7icKYNgBhfIYPq8AxBJnhOrHGLhb0NHUAUoRcsrzCyFr_mkY6RaisB7q9H-QsIl/pub" className="btn btn-dark">Full Resume</a>
                      </div>
                     
                     

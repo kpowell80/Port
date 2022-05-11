@@ -107,7 +107,7 @@ Add more color. Make it inspiring. </h4><br/><h3>What to do next? Create a Mood 
           <div className="now2" >
           <section className="found">
              <h3>How do we engage the user?</h3><h2>Simplifiy and Create a Style guide!!!</h2><br/>
-          <img src={style} className="game" alt="style"></img>
+          <img src={style} className="style" alt="style"></img>
          </section>
          </div>
           <Row className="thoughts">
