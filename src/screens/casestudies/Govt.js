@@ -2,6 +2,7 @@ import React from "react";
 import'./govt.css';
 import {Row, Col} from 'react-grid-system';
 import Navigation from '../navigationbar/navigationBar';
+import BackButton from '../../components/BackButton';
 import redline1 from '../../images/projectimages/redline1.png';
 import redline2 from '../../images/projectimages/redline2.png';
 import user from '../../images/projectimages/userpersonag.png';
@@ -26,6 +27,7 @@ function Govt(){
           </div>
           </div>
        <div className="container-fluid2" >
+          <BackButton />
           <Row >
           <Col lg={12} >
           <div className="theProject2">

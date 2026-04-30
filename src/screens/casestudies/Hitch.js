@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import {Row, Col} from 'react-grid-system';
 import Navigation from '../navigationbar/navigationBar';
+import BackButton from '../../components/BackButton';
 import storyboard from '../../images/projectimages/legosb.png';
 import journey from '../../images/projectimages/userjourneyHH.png';
 import hhusers from '../../images/projectimages/hhusers.png';
@@ -22,9 +23,10 @@ function Hitch(){
             <h1>Travel App</h1>
           </div>
           </div>
-        
+
 
        <div className="container-fluid2" >
+          <BackButton />
           <Row >
           <Col lg={12} >
           <div className="theProject3">

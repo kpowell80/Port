@@ -1,0 +1,52 @@
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: none;
+  outline: none;
+}
+
+.toggle-track {
+  width: 44px;
+  height: 22px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 22px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.toggle-track.dark {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.toggle-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s ease;
+}
+
+.toggle-track.dark .toggle-thumb {
+  transform: translateX(22px);
+  background-color: #0a0a0a;
+}
+
+.dark-mode-toggle:hover .toggle-track {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-mode-toggle:hover .toggle-track.dark {
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.dark-mode-toggle:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 4px;
+  border-radius: 22px;
+}

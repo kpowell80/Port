@@ -3,6 +3,8 @@ import './App.css';
 // import Navigation from './screens/navigationbar/navigationBar';
 import Footer from './screens/contact/Contact'
 import Cards from './screens/cards/Cards';
+import CustomCursor from './components/CustomCursor';
+import SkipToContent from './components/SkipToContent';
 import {
   BrowserRouter as Router,
   Route,Routes
@@ -13,13 +15,17 @@ import Case1 from "./screens/casestudies/Case1";
 import Govt from "./screens/casestudies/Govt";
 import Hitch from "./screens/casestudies/Hitch";
 import Variety from "./screens/casestudies/Variety";
+import AllSeasons from "./screens/casestudies/AllSeasons";
+import Hyker from "./screens/casestudies/Hyker";
 
 
 function App() {
   return (
-   
- 
+
+
     <div className="App">
+      <SkipToContent />
+      <CustomCursor />
       <Router>
         {/* <div><Navigation/></div>  */}
       <ScrollToTop/>
@@ -30,6 +36,8 @@ function App() {
           <Route path="/Govt" element={<Govt/>}></Route>
           <Route path="/Hitch" element={<Hitch/>}></Route>
           <Route path="/Variety" element={<Variety/>}></Route>
+          <Route path="/AllSeasons" element={<AllSeasons/>}></Route>
+          <Route path="/Hyker" element={<Hyker/>}></Route>
           </Routes>
   </Router>
   <Footer></Footer>

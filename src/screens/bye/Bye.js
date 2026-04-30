@@ -1,27 +1,24 @@
 import React from 'react';
 import './bye.css';
-import ParticleAnimation from 'react-particle-animation' 
+import ParticlesBg from 'particles-bg';
 
 
 
 function Bye(){
     return(
-        <div className="byes"> 
-      <ParticleAnimation 
- background={{ r: 21, g: 22, b: 23, a: 1 }}
- style ={{height:'45vh'}}
- particleSpeed={.2}
- particleRadius={1.5}
- interactive={true}
- numParticles={150}
- density_auto={true}
- density_area={600}
- color={{r:245, g:245,b:245, a:245}}
- 
- />
-      <h1 className="name">I create connections that solve design problems for the user.</h1>  
+        <div className="byes">
+      <ParticlesBg type="cobweb" color="#ffffff" num={100} />
+      <div className="hero-content">
+        <p className="hero-label">Customer Success · UX/UI Design · Full-Stack Development</p>
+        <h1 className="name">I create connections that turn complexity into experience.</h1>
+        <h5 className="bland">From customer insight to execution, I build systems, products, and relationships that work..</h5>
+        <div className="hero-cta">
+          <a href="#projects" className="btn-primary-hero">View My Work</a>
+          <a href="#resume" className="btn-ghost-hero">Experience</a>
+        </div>
+      </div>
  </div>
-      
+
     )
 }
 

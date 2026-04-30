@@ -1,0 +1,131 @@
+.skills-section {
+    background-color: #f8f8f8;
+    padding: 6rem 5% 6rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Metrics Styles */
+.metrics-container {
+    max-width: 1400px;
+    margin: 0 auto 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+.metric-item {
+    text-align: center;
+}
+
+.metric-value {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 200;
+    letter-spacing: -0.04em;
+    color: #0a0a0a;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.metric-label {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.metrics-tagline {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #999999;
+    margin: 0 auto 5rem auto;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.skills-heading {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    color: #0a0a0a;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.skills-categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.skill-category {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 2rem;
+}
+
+.skill-category:last-child {
+    border-bottom: none;
+}
+
+.category-title {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 1.5rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.skill-badge-item {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.skill-badge-item:hover {
+    border-color: #0a0a0a;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 4rem 6%;
+    }
+
+    .skills-heading {
+        margin-bottom: 3rem;
+    }
+
+    .skills-categories {
+        gap: 2rem;
+    }
+
+    .skill-badge-item {
+        font-size: 0.85rem;
+        padding: 0.65rem 1.25rem;
+    }
+}

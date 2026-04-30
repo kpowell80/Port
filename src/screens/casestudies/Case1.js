@@ -3,6 +3,7 @@ import'./case1.css';
 import ReactPlayer from 'react-player';
 import {Row, Col} from 'react-grid-system';
 import Navigation from '../navigationbar/navigationBar';
+import BackButton from '../../components/BackButton';
 import greenguy from '../../images/projectimages/greenguystand.png';
 import greengal from '../../images/projectimages/greenguystand2.png';
 import boy from '../../images/projectimages/boystand.png';
@@ -30,6 +31,7 @@ function Case1(){
           </div>
           </div>
        <div className="container-fluid2" >
+          <BackButton />
           <Row className="push" >
           <Col lg={12} >
           <div className="theProject1">          

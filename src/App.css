@@ -1,14 +1,76 @@
+/* System Fonts - Clean, Modern, Apple-esque */
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,900&display=swap');
-.App{font-family: 'Lato', sans-serif;}
 #root {
-  --nav-color: #444444;
-  --nav-color-hover:#000000;
-  --nav-border-color:#444444;
-  --light-color:#444444;
-  --font-color:#FFFFFF;
-  --font-color-hover:#070606;
-  
+  --nav-color: #0a0a0a;
+  --nav-color-hover: #1a1a1a;
+  --nav-border-color: rgba(255, 255, 255, 0.1);
+  --light-color: #f8f8f8;
+  --font-color: #ffffff;
+  --font-color-hover: #f0f0f0;
+  --bg-dark: #0a0a0a;
+  --bg-light: #ffffff;
+  --text-primary: #0a0a0a;
+  --text-secondary: #666666;
+  --border-color: #e0e0e0;
+}
+
+/* Dark Mode Variables */
+.dark-mode {
+  --bg-light: #1a1a1a;
+  --bg-dark: #0a0a0a;
+  --text-primary: #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --border-color: #333333;
+  --light-color: #2a2a2a;
+}
+
+/* Dark Mode Transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Improved Focus States for Accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #0a0a0a;
+  outline-offset: 4px;
+}
+
+.dark-mode a:focus-visible,
+.dark-mode button:focus-visible,
+.dark-mode input:focus-visible,
+.dark-mode textarea:focus-visible,
+.dark-mode select:focus-visible {
+  outline-color: #ffffff;
+}
+
+/* Remove default focus for mouse users, keep for keyboard users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  overflow-x: hidden;
 }
 
 .overlay{

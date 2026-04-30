@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import {Row, Col} from 'react-grid-system';
 import Navigation from '../navigationbar/navigationBar';
+import BackButton from '../../components/BackButton';
 import ReactPlayer from 'react-player';
 import varietyvideo from '../../images/video/varietyvideo.mp4';
 import ovhp from '../../images/projectimages/ovhp.png';
@@ -40,6 +41,7 @@ function Variety(){
          */}
 
        <div className="container-fluid2" >
+          <BackButton />
           <Row className="char">
           <Col lg={12} >
           <div className="theProject4">

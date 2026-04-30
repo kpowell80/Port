@@ -1,0 +1,77 @@
+.metrics-section {
+    background-color: #0a0a0a;
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+.metrics-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+.metric-item {
+    text-align: center;
+}
+
+.metric-value {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 200;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.metric-label {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.metrics-tagline {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .metrics-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .metrics-section {
+        padding: 4rem 6%;
+    }
+
+    .metrics-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 0;
+    }
+
+    .metric-value {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+    }
+
+    .metrics-tagline {
+        margin-top: 3rem;
+        font-size: 0.8rem;
+    }
+}

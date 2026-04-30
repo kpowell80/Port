@@ -1,52 +1,68 @@
-.navi_container{
-    background-color: var(--nav-color);
-    color:white;
-    /* padding-bottom: 100px; */
-  }
-
-  .navbar-light .navbar-nav .nav-link{
-      color: var(--font-color)!important;
-  }
-  .navbar-light .navbar-brand{
-    color: var(--font-color)!important;
-}
-.navbar-light .navbar-toggler-icon{
-    filter:invert(1);
+.navi_container {
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 0;
 }
 
-.links a:hover{
-    background-color:#A9A9A9!important;
-    color:#070606;
+.navbar-light .navbar-nav .nav-link {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    color: #ffffff !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 0.5rem 1rem;
+    transition: opacity 0.2s ease;
 }
-.logo{
 
-    height:60px;
-    width: 60px;
-    transition: all;
+.navbar-light .navbar-brand {
+    color: #ffffff !important;
 }
-.logo:hover{
-    /* background-image: url("../../images/blck-wsolve5.png"); */
-    height:50px;
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.links a:hover {
+    background-color: transparent !important;
+    opacity: 0.6;
+}
+
+.logo {
+    height: 50px;
     width: 50px;
-    transform:scale(1.5,1.5);
-    margin-right: 10px;
-
-   
+    transition: all 0.3s ease;
 }
-.small{
+
+.logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.small {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     padding-left: 15px;
 }
-.img{
-    background-color:var(--nav-color) ;
-    height:50px;
+
+.img {
+    background-color: transparent;
+    height: 50px;
     width: 50px;
 }
-.links{
+
+.links {
     margin: 0px 15px;
 }
-.nav_brand{
-   color:whitesmoke; 
 
-}.nav_brand:hover{
-   color:#A9A9A9!important;
- }
+.nav_brand {
+    color: #ffffff;
+}
+
+.nav_brand:hover {
+    opacity: 0.6;
+}

@@ -1,0 +1,148 @@
+.case-allseasons {
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.hero-image-allseasons {
+    background-color: #0a0a0a;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 70px;
+}
+
+.hero-text-allseasons {
+    text-align: center;
+    color: #ffffff;
+    z-index: 10;
+    padding: 0 5%;
+}
+
+.hero-text-allseasons h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1rem;
+}
+
+.hero-text-allseasons h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    margin: 0 0 1rem 0;
+}
+
+.hero-subtitle {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.container-fluid-allseasons {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 5% 3rem;
+}
+
+.theProject-allseasons {
+    margin-bottom: 3rem;
+}
+
+.theProject-allseasons h4,
+.valueProp-allseasons h4,
+.impact-allseasons h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0a0a0a;
+    margin: 2rem 0 1rem 0;
+}
+
+.theProject-allseasons h5,
+.valueProp-allseasons h5,
+.impact-allseasons h5 {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #444444;
+    font-weight: 400;
+}
+
+.role-list,
+.valueProp-allseasons ul,
+.impact-allseasons ul {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #444444;
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+.role-list li,
+.valueProp-allseasons ul li,
+.impact-allseasons ul li {
+    margin-bottom: 0.5rem;
+}
+
+.section-allseasons {
+    margin: 3rem 0;
+}
+
+.back-link-row {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.btn-back {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    background-color: #0a0a0a;
+    border: 1px solid #0a0a0a;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-back:hover {
+    background-color: transparent;
+    color: #0a0a0a;
+}
+
+@media (max-width: 768px) {
+    .hero-image-allseasons {
+        height: 40vh;
+        min-height: 300px;
+    }
+
+    .container-fluid-allseasons {
+        padding: 3rem 6% 2rem;
+    }
+
+    .theProject-allseasons h4,
+    .valueProp-allseasons h4,
+    .impact-allseasons h4 {
+        font-size: 1.25rem;
+    }
+
+    .theProject-allseasons h5,
+    .valueProp-allseasons h5,
+    .impact-allseasons h5 {
+        font-size: 1rem;
+    }
+}

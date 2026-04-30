@@ -1,0 +1,18 @@
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  z-index: 999999;
+  padding: 1rem 1.5rem;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.skip-to-content:focus {
+  left: 50%;
+  top: 1rem;
+  transform: translateX(-50%);
+}

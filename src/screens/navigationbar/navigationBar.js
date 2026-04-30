@@ -34,8 +34,8 @@ function NavigationBar(){
                </Navbar.Brand>
                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                <Navbar.Collapse style={{justifyContent: 'flex-end', marginRight:'2rem'}}>
-                    <Nav className="links"style={{margin:'1rem'}}>
-                      {createlinks()}  
+                    <Nav className="links"style={{margin:'1rem', alignItems: 'center', gap: '1rem'}}>
+                      {createlinks()}
                     </Nav>
                </Navbar.Collapse>
 

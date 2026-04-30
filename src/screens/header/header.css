@@ -1,13 +1,20 @@
-.me{
-    display:flex;
+.me {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 3rem; */
-    color:black;
+    padding: 5rem 5% 2rem;
+    background-color: var(--bg-light);
 }
-.period{
- margin-top: 3rem;
+
+.period {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    color: var(--text-primary);
+    margin: 0;
+    text-align: center;
 }
 
 
