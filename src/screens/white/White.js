@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './white.css';
 import ducky from '../../images/projectimages/ducky5.png';
 import ParticlesBg from 'particles-bg';
@@ -9,9 +9,21 @@ import ParticlesBg from 'particles-bg';
 
 function White() {
     const currentYear = new Date().getFullYear();
+    const [particleCount, setParticleCount] = useState(100);
+
+    useEffect(() => {
+        const updateParticleCount = () => {
+            setParticleCount(window.innerWidth <= 768 ? 26 : 100);
+        };
+
+        updateParticleCount();
+        window.addEventListener('resize', updateParticleCount);
+        return () => window.removeEventListener('resize', updateParticleCount);
+    }, []);
+
     return (
         <div className='duckyContainer' id='contact'>
-            <ParticlesBg type="cobweb" color="#ffffff" num={100} />
+            <ParticlesBg type="cobweb" color="#ffffff" num={particleCount} />
             <div className='footer-content'>
                 <h3 className='whitespace'>Let's work together</h3>
                 <p className='availability-text'>Available for opportunities in Customer Success, UX/UI Design, and Full-Stack Development</p>

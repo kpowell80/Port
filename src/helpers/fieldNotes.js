@@ -1,0 +1,22 @@
+export const fieldNotes = [
+    "Some octopuses change color while they sleep—possibly dreaming in shifting patterns across their skin.",
+    "An Einstein ring forms when gravity bends distant light into a perfect circle—space quietly curving what we thought was straight.",
+    "Every atom in your body was forged inside a star that no longer exists.",
+    "Trees can communicate through underground fungal networks, sharing nutrients and warnings across entire forests.",
+    "There are places in the ocean so deep that light has never touched them—yet life still found a way to exist.",
+    "Saturn could float in water—if there were an ocean large enough to hold it.",
+    "Some birds navigate using Earth's magnetic field, sensing direction in ways we still don't fully understand.",
+    "A single bolt of lightning contains enough energy to power a home for days.",
+    "There are more possible games of chess than atoms in the observable universe.",
+    "In certain deserts, flowers wait years—sometimes decades—for a single rain before blooming all at once.",
+    "Time moves slightly faster the higher you are above sea level—your head ages faster than your feet.",
+    "Jellyfish have existed longer than trees.",
+    "Some glaciers sing—low, haunting sounds caused by shifting ice deep beneath the surface.",
+    "There are rivers in the ocean—currents flowing with their own paths, temperatures, and boundaries.",
+    "A heartbeat begins as an electrical signal—your body quietly conducting itself, moment by moment.",
+    "Neutron stars are so dense that a single teaspoon would weigh billions of tons.",
+    "There are caves so large they have their own weather systems inside.",
+    "Some seeds can survive for thousands of years before finally growing.",
+    "The smell after rain has a name—petrichor—caused by oils released from the earth itself.",
+    "You are constantly seeing the past—because light takes time to reach you, even from across a room."
+];

@@ -1,7 +1,9 @@
 .skills-section {
+    position: relative;
     background-color: #f8f8f8;
     padding: 6rem 5% 6rem;
     border-top: 1px solid #e0e0e0;
+    z-index: 1;
 }
 
 /* Metrics Styles */
@@ -114,6 +116,21 @@
 @media (max-width: 768px) {
     .skills-section {
         padding: 4rem 6%;
+    }
+
+    .metrics-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .metric-value {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .metric-label {
+        font-size: 0.75rem;
     }
 
     .skills-heading {

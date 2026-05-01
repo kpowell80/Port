@@ -1,0 +1,210 @@
+/* Desktop position - right side of hero */
+.field-note-system {
+    position: absolute;
+    right: 25%;
+    bottom: 240px;
+    z-index: 15;
+    pointer-events: none;
+}
+
+/* The glowing cluster marker */
+.field-note-cluster {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.cluster-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.cluster-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8),
+                0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+/* Horizontal connector line - desktop */
+.field-note-connector {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+    transform-origin: left center;
+    pointer-events: none;
+}
+
+/* Desktop: Text to the right of atom */
+.field-note-content {
+    position: absolute;
+    top: -35px;
+    left: 75px;
+    width: 280px;
+    max-width: 280px;
+    pointer-events: none;
+    flex-shrink: 0;
+}
+
+/* Label with sparkle */
+.field-note-label {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.625rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    width: 100%;
+    white-space: normal;
+}
+
+.sparkle {
+    font-size: 0.65rem;
+    opacity: 0.7;
+    display: inline;
+}
+
+/* Pure floating text - horizontal paragraph */
+.field-note-text {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 300;
+    line-height: 1.45;
+    letter-spacing: 0.005em;
+    color: #eaeaea;
+    opacity: 0.95;
+    text-shadow:
+        0 0 24px rgba(0, 0, 0, 0.95),
+        0 0 12px rgba(0, 0, 0, 0.85),
+        0 2px 6px rgba(0, 0, 0, 0.75);
+    text-align: left;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+/* Tablet and smaller: Move text BELOW atom */
+@media (max-width: 1200px) {
+    .field-note-system {
+        right: 20%;
+        bottom: 200px;
+    }
+
+    /* Move text below atom, centered with more width */
+    .field-note-content {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        min-width: 280px;
+        text-align: center;
+    }
+
+    /* Vertical connector line */
+    .field-note-connector {
+        top: 10px;
+        left: 5px;
+        width: 1px;
+        height: 15px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 900px) {
+    .field-note-system {
+        right: 15%;
+        bottom: 180px;
+    }
+
+    .field-note-content {
+        width: 85%;
+        max-width: 360px;
+        min-width: 260px;
+    }
+}
+
+/* Mobile: Text below atom, may overlap into Skills section */
+@media (max-width: 768px) {
+    .field-note-system {
+        right: 10%;
+        bottom: 120px;
+    }
+
+    .field-note-content {
+        width: 80%;
+        max-width: 320px;
+        min-width: 240px;
+    }
+
+    /* Change text to black when it overlaps white section */
+    .field-note-label {
+        font-size: 0.6rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .field-note-text {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: #1a1a1a;
+        text-shadow:
+            0 0 8px rgba(255, 255, 255, 0.6),
+            0 0 4px rgba(255, 255, 255, 0.4),
+            0 1px 2px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Make sure touch works on mobile */
+    .field-note-cluster {
+        pointer-events: auto;
+        touch-action: manipulation;
+    }
+}
+
+@media (max-width: 600px) {
+    .field-note-system {
+        right: 8%;
+        bottom: 80px;
+    }
+
+    .field-note-content {
+        width: 75%;
+        max-width: 280px;
+        min-width: 220px;
+    }
+
+    .field-note-text {
+        font-size: 0.8125rem;
+    }
+}
+
+/* Very small screens: hide completely */
+@media (max-width: 480px) {
+    .field-note-system {
+        display: none;
+    }
+}

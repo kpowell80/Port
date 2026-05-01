@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navigation.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -6,7 +6,6 @@ import {navigationLinks} from '../../helpers/navigationLinks';
 import unsolved from"../../images/projectimages/noshadow9u.png";
 import solutions from"../../images/noblusolv10.png";
 // import Image from 'react-bootstrap/Image';
-import HoverImage from "react-hover-image";
 
 
 function createlinks(){
@@ -15,21 +14,36 @@ function createlinks(){
     ))
 }
 
-function Solve(e) {
-    e.target.setAttribute('src', {solutions} );
-    e.target.setAttribute('alt', 'cube');
-  }
+function CubeLogo() {
+    const [isSolved, setIsSolved] = useState(false);
+
+    const handleInteraction = () => {
+        setIsSolved(!isSolved);
+    };
+
+    return (
+        <img
+            src={isSolved ? solutions : unsolved}
+            className="logo"
+            style={{display: 'inline-block', cursor: 'pointer'}}
+            alt="cube"
+            onClick={handleInteraction}
+            onMouseEnter={() => setIsSolved(true)}
+            onMouseLeave={() => setIsSolved(false)}
+        />
+    );
+}
 
 function NavigationBar(){
     return(
         <div id="home">
-           <Navbar className="navi_container" 
-           style={{zIndex:20000000, position:'fixed', top:'0',width:'100%'}} 
-           collapseOnSelect 
+           <Navbar className="navi_container"
+           style={{zIndex:20000000, position:'fixed', top:'0',width:'100%'}}
+           collapseOnSelect
            expand="md">
                <Navbar.Brand style={{marginLeft:'2rem'}} href="#home">
-         
-               <HoverImage src={unsolved} className="logo" style={{display: 'inline-block'}} hoverSrc={solutions} onClick={Solve}></HoverImage>
+
+               <CubeLogo />
                 <span className="small" style={{display:'inline-block'}}>Katelin Reilly</span>
                </Navbar.Brand>
                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
