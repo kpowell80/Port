@@ -1,0 +1,72 @@
+.projects-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.projects-dropdown .dropdown-toggle {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 0.5rem 1rem;
+    transition: opacity 0.2s ease;
+}
+
+/* Remove Bootstrap arrow */
+.projects-dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.projects-dropdown .dropdown-toggle:hover {
+    opacity: 0.6;
+}
+
+.projects-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-width: 280px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    z-index: 20000001;
+    margin-top: 0;
+    padding-top: 0.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.projects-dropdown .dropdown-menu.show {
+    display: block;
+}
+
+.projects-dropdown .dropdown-item {
+    display: block;
+    padding: 0.875rem 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.projects-dropdown .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.projects-dropdown .dropdown-item:hover {
+    color: #ffffff;
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}

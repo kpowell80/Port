@@ -1,190 +1,339 @@
-.hero_image3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/projectimages/world.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.case3{
-    display:flex;
-    flex-direction: column;
-    margin-top: 5%;
+/* ===================================
+   Hitch Travel App Case Study
+   =================================== */
 
-}
-.bigger{
-    padding:0px;
-    margin: 0px;
-    width: 100% !important;  
-}
-.hero_text8{
-    color:white;
-    font-weight: bold;
-    text-align: center;
-    padding-top:5%;
-    padding-bottom: 2%;
-}
- .theProject3{
-    background-color: whitesmoke;
-    text-align: left;
-    padding:2%;
-    padding-left: 25%;
-    padding-right: 25%;
-}  
-.valueProp{
-    color:black;
-    text-align: left;
-    padding:2%; 
-   
-}
-.user{
-    height: 300px;
-}
-.summary{
-    background-color:gray;
-    text-align: center;
-    padding:2%;
-}
-.questions5{
-    text-align: center;
-    padding:2%;
-}
-.researchPlan3{
-    text-align: left;
-    padding:2%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.realizations9{
-    text-align: left;
-    padding-left: 2% !important;
-    padding-right: 2% !important;
-    
+@import './casestudy-base.css';
 
+/* Base Styles */
+.case3 {
+  background-color: var(--color-white);
+  min-height: 100vh;
+  position: relative;
 }
-.tools{
-    background-color:lightgrey;
-    text-align: center;
-    padding:2%;
-}
-.gridtextbox1{
-    padding-top: 1%;
-    align-items: left;
-    text-align: left;
-    padding-left: 4% !important;
-    font-size:  22px;
-    
-    }
-.gridtextbox23{
-    padding-left: 2%;
-        align-items: right;
-        padding-right: 10% ;
-        padding-top: 1%;
-    }
-.gridtextbox3{
-        align-items: right;
-        text-align: left;
-        padding-left:5% !important;
-        padding-top: 1%;
-    }
-.red{
-    max-height: 500px;
-    width: auto;
-    padding:1%;
-    
-}
-.li{
-    list-style-type: none;
-} 
 
-.findings44{
-    margin-top: 3rem;
-    padding:2%;
-   margin-left: 10%;
-   margin-right: 10%;
-    
+/* Hero Section - Using gradient background */
+.hero_image3 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  max-height: 600px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.now{
-    text-align: center;
-    padding:2%;
-   max-height: 900px;
-    background-color: whitesmoke;
-}
-.gridtextbox9 h5{
-    align-items: right;
-    text-align: left;
-    padding-top: 1%;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-/* .game{
-    height: 20%;
-    width: auto;
-    padding:1%;
-} */
-#go:hover{
-    background-color: silver;
-}
-.thoughts{
-    text-align: center;
-    padding:2%;
-}  
-.last3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/projectimages/world.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 300px;
-    text-align: center;
-    padding-top: 4%;
-}
-#projects_button3{
-    margin: 2%;
-    background-color: #e7e7e7; color: black;
-    font-size: 20px;
-    border-radius: 4px;
-    padding:1%;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
 
+.hero_text8 {
+  text-align: center;
+  color: var(--color-white);
+  position: relative;
+  z-index: 2;
+  padding: var(--space-8);
 }
-#projects_button3:hover{
-    background-color: black; color: #e7e7e7;
-    transform: translateY(-7px);
-    box-shadow: 0px 15px 20px 	rgb(139,69,19);
-  
+
+.hero_text8 h3 {
+  font-family: var(--font-text);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: var(--space-4);
 }
-.keep3{
-    color: white;
+
+.hero_text8 h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  margin: 0;
+  color: var(--color-white);
 }
-.user5{
-    height: 45%;
-    max-width: 100%;
-    padding:1%;
-    align-content: center;
+
+/* Container */
+.container-fluid2 {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0;
 }
-.nos{
-    text-align: center;
-    padding:2%;
-   max-height: 900px;
-    background-color: whitesmoke; 
+
+/* Project Section */
+.theProject3 {
+  padding: var(--space-16) var(--space-6);
+  background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-white) 100%);
 }
-.row22{
-    padding: 2%;
-   margin-left: 10%;
-   margin-right: 10%;
-   margin-top: 3rem;
-   
+
+.theProject3 h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: var(--space-3);
+  margin-top: var(--space-6);
 }
-.long{
-    background-color: whitesmoke;
+
+.theProject3 h4 {
+  font-family: var(--font-text);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-gray-600);
+  font-weight: 400;
+  margin-bottom: var(--space-4);
 }
-.gamey{
-    height: 45%;
-    width: 100%;
+
+/* Questions Section */
+.questions5 {
+  background-color: var(--color-gray-50);
+  padding: var(--space-12) 0;
+  margin: 0;
 }
-.pause{
-    margin-top: 3rem;;
+
+.questions5 h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  line-height: 1.6;
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+/* Grid Sections */
+.gridtextbox1,
+.gridtextbox3 {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Research Section */
+.researchPlan3 {
+  background-color: var(--color-white);
+  padding: var(--space-12) 0;
+  margin: 0;
+}
+
+.researchPlan3 h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: var(--space-4);
+}
+
+.researchPlan3 h4 {
+  font-family: var(--font-text);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-gray-600);
+  margin: var(--space-4) 0;
+}
+
+/* Findings Section */
+.findings3 {
+  padding: var(--space-16) var(--space-6);
+  background-color: var(--color-warm);
+  text-align: center;
+}
+
+.findings3 h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: var(--space-4);
+}
+
+.findings3 h4 {
+  font-family: var(--font-text);
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--color-gray-600);
+  margin-bottom: var(--space-6);
+}
+
+/* Now Section */
+.now3 {
+  padding: var(--space-16) var(--space-6);
+  background-color: var(--color-white);
+}
+
+/* Impact Box for final results */
+.impact-box {
+  background: var(--color-warm);
+  padding: var(--space-12);
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  margin: var(--space-8) 0;
+}
+
+.now3 h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: var(--space-4);
+}
+
+.now3 h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-black);
+  margin: var(--space-4) 0;
+}
+
+.now3 h4 {
+  font-family: var(--font-text);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-gray-600);
+}
+
+/* Images */
+.story, .journey, .users, .rating, .research, .user5, .gamey {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  margin-bottom: var(--space-4);
+  object-fit: contain;
+  max-height: 400px;
+}
+
+/* Specific image sizing for better layout */
+.user5 {
+  max-width: 350px;
+  margin: 0 auto var(--space-4) auto;
+  display: block;
+}
+
+.gamey {
+  max-width: 450px;
+  margin: 0 auto var(--space-4) auto;
+  display: block;
+}
+
+/* More Projects Section */
+.last3 {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  padding: var(--space-24) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.last3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.keep3 {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: var(--space-8);
+  position: relative;
+  display: inline-block;
+}
+
+.keep3::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-white), transparent);
+}
+
+#projects_button3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  margin: var(--space-3);
+  padding: var(--space-6);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  min-width: 280px;
+}
+
+#projects_button3:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 40px -15px rgba(0, 0, 0, 0.5),
+    0 0 40px -10px rgba(255, 255, 255, 0.1);
+}
+
+#projects_button3::after {
+  content: '→';
+  position: absolute;
+  right: var(--space-6);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+#projects_button3:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero_image3 {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .theProject3,
+  .findings3,
+  .now3 {
+    padding: var(--space-12) var(--space-4);
+  }
+
+  .questions5,
+  .researchPlan3 {
+    padding: var(--space-8) 0;
+  }
+
+  #projects_button3 {
+    width: calc(100% - var(--space-8));
+    margin: var(--space-2) var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_image3 {
+    height: 50vh;
+    min-height: 350px;
+  }
 }

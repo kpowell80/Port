@@ -3,6 +3,7 @@ import './navigation.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import {navigationLinks} from '../../helpers/navigationLinks';
+import ProjectsNav from '../../components/ProjectsNav';
 import unsolved from"../../images/projectimages/noshadow9u.png";
 import solutions from"../../images/noblusolv10.png";
 // import Image from 'react-bootstrap/Image';
@@ -41,7 +42,7 @@ function NavigationBar(){
            style={{zIndex:20000000, position:'fixed', top:'0',width:'100%'}}
            collapseOnSelect
            expand="md">
-               <Navbar.Brand style={{marginLeft:'2rem'}} href="#home">
+               <Navbar.Brand style={{marginLeft:'2rem', cursor:'pointer'}} href="/">
 
                <CubeLogo />
                 <span className="small" style={{display:'inline-block'}}>Katelin Reilly</span>
@@ -50,6 +51,7 @@ function NavigationBar(){
                <Navbar.Collapse style={{justifyContent: 'flex-end', marginRight:'2rem'}}>
                     <Nav className="links"style={{margin:'1rem', alignItems: 'center', gap: '1rem'}}>
                       {createlinks()}
+                      <ProjectsNav />
                     </Nav>
                </Navbar.Collapse>
 

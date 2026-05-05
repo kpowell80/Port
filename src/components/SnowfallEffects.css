@@ -1,0 +1,29 @@
+.silver-snow-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.silver-snowflake {
+    position: absolute;
+    top: -50px;
+    opacity: 0.75;
+    animation: silverSnowfall linear infinite;
+    pointer-events: none;
+}
+
+@keyframes silverSnowfall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.75;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
